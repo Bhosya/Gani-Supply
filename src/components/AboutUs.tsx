@@ -1,8 +1,11 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const AboutUs = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="py-20 px-6 md:px-10 bg-gani-cream relative overflow-hidden">
       {/* Decorative elements */}
@@ -26,25 +29,19 @@ const AboutUs = () => {
             style={{ animationDelay: "300ms" }}
           >
             <span className="inline-block text-gani-green font-medium mb-3">
-              OUR STORY
+              {t("ourStory")}
             </span>
             <h2 className="text-3xl md:text-4xl font-playfair leading-tight mb-6">
-              Curating Beauty & Function Since 2018
+              {t("storyTitle")}
             </h2>
             <p className="text-lg text-gani-dark/80 mb-6">
-              Gani Supply was born from a passion for beautiful, functional
-              objects that enrich everyday life. What began as a small studio in
-              Jakarta has grown into a carefully curated collection of products
-              from around the world.
+              {t("storyDescription1")}
             </p>
             <p className="text-lg text-gani-dark/80 mb-8">
-              Our vision is simple: to bring together thoughtfully designed
-              products that combine artistry and purpose. Each item in our
-              collection is selected with care, representing our commitment to
-              craftsmanship, sustainability, and timeless design.
+              {t("storyDescription2")}
             </p>
             <Button className="bg-gani-green hover:bg-gani-green-dark text-white rounded-none px-8">
-              Our Philosophy <ArrowRight className="ml-2 h-5 w-5" />
+              {t("ourPhilosophy")} <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
 
@@ -66,7 +63,7 @@ const AboutUs = () => {
         {/* Brand timeline/milestones */}
         <div className="mt-20 pt-20 border-t border-gani-green/20">
           <h3 className="text-center text-2xl font-playfair mb-16">
-            Our Journey
+            {t("ourJourney")}
           </h3>
           <div className="flex flex-col md:flex-row justify-between relative">
             {/* Timeline line */}
@@ -82,14 +79,7 @@ const AboutUs = () => {
                 <div className="bg-gani-green h-5 w-5 rounded-full z-10 mb-4"></div>
                 <h4 className="font-playfair text-xl mb-2">{year}</h4>
                 <p className="text-center text-sm text-gani-dark/70 max-w-[200px]">
-                  {index === 0 &&
-                    "Founded in Jakarta with a small collection of handcrafted items."}
-                  {index === 1 &&
-                    "Expanded to include international artisans and opened our flagship store."}
-                  {index === 2 &&
-                    "Launched our sustainability initiative and exclusive artisan collaborations."}
-                  {index === 3 &&
-                    "Looking ahead: Creating a global community of design enthusiasts."}
+                  {t(`milestone${index + 1}`)}
                 </p>
               </div>
             ))}

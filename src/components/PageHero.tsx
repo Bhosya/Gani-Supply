@@ -1,21 +1,17 @@
 import React from "react";
-import { cn } from "@/lib/utils";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface PageHeroProps {
   title: string;
   description: string;
   imageUrl: string;
-  className?: string;
 }
 
-const PageHero = ({
-  title,
-  description,
-  imageUrl,
-  className,
-}: PageHeroProps) => {
+const PageHero = ({ title, description, imageUrl }: PageHeroProps) => {
+  const { t } = useLanguage();
+
   return (
-    <div className={cn("relative h-[60vh] flex items-center", className)}>
+    <section className="relative h-[60vh] flex items-center overflow-hidden">
       {/* Background image with overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -23,18 +19,18 @@ const PageHero = ({
           alt={title}
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-gani-dark/80 to-gani-dark/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-gani-dark/70 to-gani-dark/10"></div>
       </div>
 
-      <div className="container mx-auto px-6 md:px-10 relative z-20">
+      <div className="container px-6 md:px-10 z-10">
         <div className="max-w-2xl space-y-4 animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-playfair font-medium leading-tight text-white">
-            {title}
+            {t(title)}
           </h1>
-          <p className="text-lg md:text-xl text-gani-cream/90">{description}</p>
+          <p className="text-lg text-gani-cream/90">{t(description)}</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

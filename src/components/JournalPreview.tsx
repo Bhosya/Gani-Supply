@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 // Sample journal entries
 const journalEntries = [
@@ -38,15 +39,18 @@ const journalEntries = [
 ];
 
 const JournalPreview = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="py-20 px-6 md:px-10 bg-gani-cream/50">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
           <div>
-            <h2 className="text-3xl md:text-4xl font-playfair mb-3">Journal</h2>
+            <h2 className="text-3xl md:text-4xl font-playfair mb-3">
+              {t("journal")}
+            </h2>
             <p className="text-gani-dark/70 max-w-md">
-              Stories, inspirations, and behind-the-scenes glimpses from the
-              world of Gani Supply.
+              {t("journalDescription")}
             </p>
           </div>
           <Link to="/journal">
@@ -54,7 +58,7 @@ const JournalPreview = () => {
               variant="link"
               className="text-gani-green flex items-center no-underline mt-4 md:mt-0"
             >
-              View all articles <ArrowRight className="ml-1 h-4 w-4" />
+              {t("viewAllArticles")} <ArrowRight className="ml-1 h-4 w-4" />
             </Button>
           </Link>
         </div>

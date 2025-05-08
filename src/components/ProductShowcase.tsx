@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 // Sample product data
 const products = [
@@ -31,6 +32,8 @@ const products = [
 ];
 
 const ProductCard = ({ product, index }: { product: any; index: number }) => {
+  const { t } = useLanguage();
+
   return (
     <div
       className={`group relative overflow-hidden hover-lift ${
@@ -68,24 +71,25 @@ const ProductCard = ({ product, index }: { product: any; index: number }) => {
 };
 
 const ProductShowcase = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="py-20 px-6 md:px-10 bg-white">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
           <div>
             <h2 className="text-3xl md:text-4xl font-playfair mb-3">
-              Curated Collection
+              {t("curatedCollection")}
             </h2>
             <p className="text-gani-dark/70 max-w-md">
-              Each piece in our collection tells a story, carefully selected for
-              its beauty, functionality, and craftsmanship.
+              {t("collectionDescription")}
             </p>
           </div>
           <Button
             variant="link"
             className="text-gani-green flex items-center no-underline mt-4 md:mt-0"
           >
-            View all products <ArrowRight className="ml-1 h-4 w-4" />
+            {t("viewAllProducts")} <ArrowRight className="ml-1 h-4 w-4" />
           </Button>
         </div>
 

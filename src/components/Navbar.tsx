@@ -1,27 +1,25 @@
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
-import { Menu, X, ShoppingCart, User } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
+import LanguageSelector from "./LanguageSelector";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      const scrollPosition = window.scrollY;
+      setScrolled(scrollPosition > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   // Close mobile menu when route changes
@@ -64,7 +62,7 @@ const Navbar = () => {
                 : "text-gani-cream hover:text-white"
             )}
           >
-            Home
+            {t("home")}
           </Link>
           <Link
             to="/products"
@@ -77,7 +75,7 @@ const Navbar = () => {
                 : "text-gani-cream hover:text-white"
             )}
           >
-            Products
+            {t("products")}
           </Link>
           <Link
             to="/about"
@@ -90,7 +88,7 @@ const Navbar = () => {
                 : "text-gani-cream hover:text-white"
             )}
           >
-            About Us
+            {t("about")}
           </Link>
           <Link
             to="/journal"
@@ -103,7 +101,7 @@ const Navbar = () => {
                 : "text-gani-cream hover:text-white"
             )}
           >
-            Journal
+            {t("journal")}
           </Link>
           <Link
             to="/contact"
@@ -116,46 +114,21 @@ const Navbar = () => {
                 : "text-gani-cream hover:text-white"
             )}
           >
-            Contact
+            {t("contact")}
           </Link>
           <div className="flex items-center space-x-4 ml-4">
-            <Button
-              size="icon"
-              variant="ghost"
-              className={cn(
-                "transition-colors duration-300",
-                scrolled
-                  ? "text-gani-green hover:text-gani-green-dark hover:bg-gani-green/10"
-                  : "text-white hover:text-gani-cream hover:bg-white/10"
-              )}
-            >
-              <User className="h-5 w-5" />
-            </Button>
-            <Button
-              size="icon"
-              variant="ghost"
-              className={cn(
-                "transition-colors duration-300 relative",
-                scrolled
-                  ? "text-gani-green hover:text-gani-green-dark hover:bg-gani-green/10"
-                  : "text-white hover:text-gani-cream hover:bg-white/10"
-              )}
-            >
-              <ShoppingCart className="h-5 w-5" />
-              <span className="absolute -top-1 -right-1 bg-gani-green text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
-                0
-              </span>
-            </Button>
+            <LanguageSelector />
           </div>
         </div>
 
         {/* Mobile Navigation Toggle */}
-        <div className="md:hidden flex items-center">
+        <div className="md:hidden flex items-center space-x-4">
+          <LanguageSelector />
           <Button
             size="icon"
             variant="ghost"
             className={cn(
-              "transition-colors duration-300",
+              "transition-colors duration-300 z-50",
               scrolled
                 ? "text-gani-green hover:text-gani-green-dark"
                 : "text-white"
@@ -182,54 +155,38 @@ const Navbar = () => {
             className="text-white hover:text-gani-cream"
             onClick={() => setIsOpen(false)}
           >
-            Home
+            {t("home")}
           </Link>
           <Link
             to="/products"
             className="text-white hover:text-gani-cream"
             onClick={() => setIsOpen(false)}
           >
-            Products
+            {t("products")}
           </Link>
           <Link
             to="/about"
             className="text-white hover:text-gani-cream"
             onClick={() => setIsOpen(false)}
           >
-            About Us
+            {t("about")}
           </Link>
           <Link
             to="/journal"
             className="text-white hover:text-gani-cream"
             onClick={() => setIsOpen(false)}
           >
-            Journal
+            {t("journal")}
           </Link>
           <Link
             to="/contact"
             className="text-white hover:text-gani-cream"
             onClick={() => setIsOpen(false)}
           >
-            Contact
+            {t("contact")}
           </Link>
           <div className="flex items-center space-x-8 mt-6">
-            <Button
-              size="icon"
-              variant="ghost"
-              className="text-white hover:text-gani-cream hover:bg-white/10"
-            >
-              <User className="h-5 w-5" />
-            </Button>
-            <Button
-              size="icon"
-              variant="ghost"
-              className="text-white hover:text-gani-cream hover:bg-white/10 relative"
-            >
-              <ShoppingCart className="h-5 w-5" />
-              <span className="absolute -top-1 -right-1 bg-gani-green text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
-                0
-              </span>
-            </Button>
+            <LanguageSelector />
           </div>
         </div>
       </div>
