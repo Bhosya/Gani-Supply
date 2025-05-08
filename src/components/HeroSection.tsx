@@ -12,7 +12,7 @@ const HeroSection = () => {
       {/* Background image with overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://www.epicgardening.com/wp-content/uploads/2024/03/Woman-mulching-soil-with-bark-chips.jpeg"
+          src="images/woodChip.webp"
           alt="Gani Supply Hero"
           className="w-full h-full object-cover"
         />

@@ -16,7 +16,7 @@ const Contact = () => {
       <PageHero
         title="Contact Us"
         description="We'd love to hear from you. Get in touch with any questions, inquiries, or to schedule a visit to our store."
-        imageUrl="https://plus.unsplash.com/premium_photo-1677456381939-8cbdf4ed2073?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        imageUrl="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       />
 
       <ContactSection />

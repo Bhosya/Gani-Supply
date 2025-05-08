@@ -19,7 +19,7 @@ const PageHero = ({ title, description, imageUrl }: PageHeroProps) => {
           alt={title}
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-gani-dark/70 to-gani-dark/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30"></div>
       </div>
 
       <div className="container px-6 md:px-10 z-10">

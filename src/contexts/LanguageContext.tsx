@@ -20,9 +20,9 @@ const translations = {
     // Hero Section
     exploreCollection: "Explore Collection",
     ourPhilosophy: "Our Philosophy",
-    artisticEssentials: "Artistic Essentials for Modern Living",
+    artisticEssentials: "Quality Wood for Everyday & Industrial Use",
     curatedDescription:
-      "Carefully curated products that blend functionality with artistic expression, creating spaces that inspire.",
+      "Discover our curated range of wood-based products — from premium charcoal to sustainable wood pallets — crafted for performance, durability, and sustainability.",
 
     // Product Section
     viewAllProducts: "View all products",
@@ -33,11 +33,11 @@ const translations = {
 
     // About Section
     ourStory: "OUR STORY",
-    storyTitle: "Curating Beauty & Function Since 2018",
+    storyTitle: "Rooted in Nature, Crafted for Industry",
     storyDescription1:
-      "Gani Supply was born from a passion for beautiful, functional objects that enrich everyday life. What began as a small studio in Jakarta has grown into a carefully curated collection of products from around the world.",
+      "At Gani Supply, our story begins with the essence of nature — wood. Since our founding, we’ve focused on transforming responsibly sourced wood into essential products that power homes, businesses, and industries.",
     storyDescription2:
-      "Our vision is simple: to bring together thoughtfully designed products that combine artistry and purpose. Each item in our collection is selected with care, representing our commitment to craftsmanship, sustainability, and timeless design.",
+      "We believe in the balance between utility and sustainability. That’s why our products are not only built to perform but also aligned with environmentally conscious practices. Whether you’re a small business or a large-scale manufacturer, we deliver the quality and consistency you can rely on.",
     ourJourney: "Our Journey",
     milestone1:
       "Founded in Jakarta with a small collection of handcrafted items.",
@@ -132,9 +132,10 @@ const translations = {
     // Hero Section
     exploreCollection: "Jelajahi Koleksi",
     ourPhilosophy: "Filosofi Kami",
-    artisticEssentials: "Kebutuhan Artistik untuk Kehidupan Modern",
+    artisticEssentials:
+      "Produk Kayu Berkualitas untuk Kebutuhan Sehari-hari & Industri",
     curatedDescription:
-      "Produk yang dipilih dengan cermat yang menggabungkan fungsionalitas dengan ekspresi artistik, menciptakan ruang yang menginspirasi.",
+      "Temukan berbagai produk berbahan dasar kayu pilihan kami — mulai dari arang premium hingga palet kayu ramah lingkungan — dibuat untuk performa, daya tahan, dan keberlanjutan.",
 
     // Product Section
     viewAllProducts: "Lihat semua produk",
@@ -145,11 +146,11 @@ const translations = {
 
     // About Section
     ourStory: "CERITA KAMI",
-    storyTitle: "Mengkurasi Keindahan & Fungsi Sejak 2018",
+    storyTitle: "Berakar dari Alam, Dibentuk untuk Industri",
     storyDescription1:
-      "Gani Supply lahir dari hasrat akan benda-benda indah dan fungsional yang memperkaya kehidupan sehari-hari. Bermula dari studio kecil di Jakarta, kini telah berkembang menjadi koleksi produk yang dipilih dengan cermat dari seluruh dunia.",
+      "Gani Supply lahir dari filosofi sederhana: memaksimalkan potensi alami kayu menjadi solusi industri yang andal dan berkelanjutan. Kami menyediakan berbagai produk berbasis kayu seperti arang hardwood premium, serbuk gergaji, briket, wood chip, hingga palet kayu yang presisi — semua melalui proses seleksi dan produksi yang teliti.",
     storyDescription2:
-      "Visi kami sederhana: menghadirkan produk yang dirancang dengan penuh pertimbangan yang menggabungkan seni dan tujuan. Setiap item dalam koleksi kami dipilih dengan teliti, mencerminkan komitmen kami terhadap keahlian, keberlanjutan, dan desain yang abadi.",
+      "Kami percaya bahwa fungsi dan kelestarian bisa berjalan seimbang. Setiap produk kami dibuat untuk memenuhi standar performa tinggi sekaligus menjaga komitmen terhadap lingkungan. Baik Anda pelaku UMKM maupun perusahaan besar, kami hadir sebagai mitra penyedia bahan yang berkualitas, stabil, dan terpercaya.",
     ourJourney: "Perjalanan Kami",
     milestone1:
       "Didirikan di Jakarta dengan koleksi kecil barang-barang buatan tangan.",
@@ -244,9 +245,10 @@ const translations = {
     // Hero Section
     exploreCollection: "استكشف المجموعة",
     ourPhilosophy: "فلسفتنا",
-    artisticEssentials: "الأساسيات الفنية للحياة العصرية",
+    artisticEssentials:
+      "الأساسيات الفنية للحياة منتجات خشبية عالية الجودة للاستخدام اليومي والصناعي",
     curatedDescription:
-      "منتجات مختارة بعناية تجمع بين الوظائف والتعبير الفني، مما يخلق مساحات ملهمة.",
+      "اكتشف مجموعتنا المختارة من المنتجات الخشبية — من الفحم الممتاز إلى المنصات الخشبية المستدامة — المصممة للأداء والمتانة والاستدامة.",
 
     // Product Section
     viewAllProducts: "عرض جميع المنتجات",
@@ -257,11 +259,11 @@ const translations = {
 
     // About Section
     ourStory: "قصتنا",
-    storyTitle: "نقوم بتجميع الجمال والوظائف منذ عام 2018",
+    storyTitle: "متجذرة في الطبيعة، مصممة للصناعة",
     storyDescription1:
-      "ولدت Gani Supply من شغف بالأشياء الجميلة والوظيفية التي تثري الحياة اليومية. بدأت كاستوديو صغير في جاكرتا ونمت لتصبح مجموعة منتقاة بعناية من المنتجات من جميع أنحاء العالم.",
+      "تأسست Gani Supply على مبدأ تحويل موارد الطبيعة إلى منتجات صناعية عالية الكفاءة. نقدم مجموعة من المنتجات الخشبية التي تشمل فحم الخشب الصلب، نشارة الخشب، البريكيت، شرائح الخشب، ومنصات التحميل — جميعها مصنوعة بعناية لضمان الجودة والاستدامة.",
     storyDescription2:
-      "رؤيتنا بسيطة: جمع المنتجات المصممة بعناية التي تجمع بين الفن والغرض. يتم اختيار كل عنصر في مجموعتنا بعناية، مما يعكس التزامنا بالحرفية والاستدامة والتصميم الخالد.",
+      "نؤمن بأن الأداء البيئي والتجاري يمكن أن يتعايشا. لذلك، تلتزم منتجاتنا بالمعايير البيئية دون التضحية بالكفاءة. سواء كنت مؤسسة صغيرة أو شركة صناعية كبرى، نحن نضمن لك مواد يمكن الاعتماد عليها باستمرار.",
     ourJourney: "رحلتنا",
     milestone1: "تأسست في جاكرتا مع مجموعة صغيرة من القطع المصنوعة يدويًا.",
     milestone2: "توسعت لتشمل الحرفيين الدوليين وافتتحت متجرنا الرئيسي.",
@@ -351,9 +353,9 @@ const translations = {
     // Hero Section
     exploreCollection: "探索系列",
     ourPhilosophy: "我们的理念",
-    artisticEssentials: "现代生活的艺术必需品",
+    artisticEssentials: "优质木制产品，适用于日常和工业用途",
     curatedDescription:
-      "精心策划的产品，将功能性与艺术表现力融为一体，创造激发灵感的空间。",
+      "探索我们精心挑选的木质产品系列——从优质木炭到可持续木托盘——专为高性能、耐用性和可持续性而打造。",
 
     // Product Section
     viewAllProducts: "查看所有产品",
@@ -364,11 +366,11 @@ const translations = {
 
     // About Section
     ourStory: "我们的故事",
-    storyTitle: "自2018年以来，精心策划美与功能",
+    storyTitle: "扎根自然，服务工业",
     storyDescription1:
-      "Gani Supply源于对丰富日常生活的美丽实用物品的热爱。从雅加达的一个小工作室开始，现已发展成为精心策划的全球产品系列。",
+      "Gani Supply 的故事源于自然对木材的馈赠。我们致力于将天然木材转化为高效、可持续的产品，涵盖硬木炭、锯末、压块、木托盘及木屑等核心品类，广泛应用于家庭、商业及工业领域。",
     storyDescription2:
-      "我们的愿景很简单：汇集精心设计的产品，将艺术与实用性相结合。我们精心挑选系列中的每一件物品，体现了我们对工艺、可持续性和永恒设计的承诺。",
+      "我们坚信品质与环保可以共存。每一件产品都体现了我们对工艺的执着和对环境的责任。不论您是中小企业还是大型制造商，我们始终如一地提供您值得信赖的木制品解决方案。",
     ourJourney: "我们的历程",
     milestone1: "在雅加达成立，拥有小型手工制品系列。",
     milestone2: "扩展至国际工匠并开设旗舰店。",

@@ -2,32 +2,39 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Link } from "react-router-dom";
 
 // Sample product data
 const products = [
   {
     id: 1,
-    name: "Handcrafted Ceramic Vase",
+    name: "Hardwood Charcoal",
     price: "$89",
-    image:
-      "https://images.unsplash.com/photo-1723107624989-7890909df138?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    category: "Home Decor",
+    image: "images/hardwoordCharcoal.jpeg",
   },
   {
     id: 2,
-    name: "Minimalist Wooden Chair",
+    name: "Sawdust",
     price: "$245",
-    image:
-      "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1365&q=80",
-    category: "Furniture",
+    image: "images/sawdust.jpg",
   },
   {
     id: 3,
-    name: "Linen Table Runner",
+    name: "Bricket",
     price: "$65",
-    image:
-      "https://images.unsplash.com/photo-1462927114214-6956d2fddd4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
-    category: "Textiles",
+    image: "images/charcoal.jpg",
+  },
+  {
+    id: 4,
+    name: "Wood Pellet",
+    price: "$245",
+    image: "images/woodPellet.webp",
+  },
+  {
+    id: 5,
+    name: "Wood Chip",
+    price: "$65",
+    image: "images/woodChip.webp",
   },
 ];
 
@@ -36,14 +43,11 @@ const ProductCard = ({ product, index }: { product: any; index: number }) => {
 
   return (
     <div
-      className={`group relative overflow-hidden hover-lift ${
-        index % 3 === 0 ? "col-span-2 row-span-2" : ""
-      }`}
-      style={{
-        animationDelay: `${index * 150}ms`,
-      }}
+      key={index}
+      className="group relative aspect-square overflow-hidden hover-lift"
+      style={{ animationDelay: `${index * 150}ms` }}
     >
-      <div className="relative aspect-square w-full overflow-hidden">
+      <div className="relative w-full h-full overflow-hidden">
         <img
           src={product.image}
           alt={product.name}
@@ -98,6 +102,20 @@ const ProductShowcase = () => {
           {products.map((product, index) => (
             <ProductCard key={product.id} product={product} index={index} />
           ))}
+
+          {/* CTA Block */}
+          <Link to="/products">
+            <div className="flex items-center justify-center aspect-square bg-gani-dark text-white text-center hover:bg-black transition-colors duration-300 cursor-pointer">
+              <div>
+                <h3 className="text-xl font-semibold mb-1">
+                  See Our Full Catalogue
+                </h3>
+                <p className="text-sm opacity-80">
+                  Browse all our wood-based products
+                </p>
+              </div>
+            </div>
+          </Link>
         </div>
       </div>
     </section>

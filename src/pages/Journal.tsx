@@ -88,7 +88,7 @@ const Journal = () => {
       <PageHero
         title="Journal"
         description="Stories, insights, and inspiration from the world of Gani Supply and beyond."
-        imageUrl="https://images.unsplash.com/photo-1526280760714-f9e8b26f318f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        imageUrl="https://plus.unsplash.com/premium_photo-1683417272601-dbbfed0ed718?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       />
 
       <section className="py-16 px-6 md:px-10 bg-gani-cream">
@@ -122,23 +122,6 @@ const Journal = () => {
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* Filter Categories */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {categories.map((category, index) => (
-              <Button
-                key={index}
-                variant={index === 0 ? "default" : "outline"}
-                className={
-                  index === 0
-                    ? "bg-gani-green text-white"
-                    : "border-gani-green text-gani-green"
-                }
-              >
-                {category}
-              </Button>
-            ))}
           </div>
 
           {/* Journal Entries Grid */}
@@ -177,37 +160,6 @@ const Journal = () => {
                 </div>
               </div>
             ))}
-          </div>
-
-          {/* Pagination */}
-          <div className="flex justify-center mt-12">
-            <div className="flex items-center space-x-2">
-              <Button
-                variant="outline"
-                className="border-gani-green text-gani-green h-10 w-10 p-0"
-              >
-                1
-              </Button>
-              <Button
-                variant="outline"
-                className="border-gani-earth text-gani-dark h-10 w-10 p-0"
-              >
-                2
-              </Button>
-              <Button
-                variant="outline"
-                className="border-gani-earth text-gani-dark h-10 w-10 p-0"
-              >
-                3
-              </Button>
-              <span className="text-gani-dark/60">...</span>
-              <Button
-                variant="outline"
-                className="border-gani-earth text-gani-dark h-10 w-10 p-0"
-              >
-                8
-              </Button>
-            </div>
           </div>
         </div>
       </section>

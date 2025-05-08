@@ -50,9 +50,9 @@ const About = () => {
             >
               <div className="absolute -top-4 -left-4 w-40 h-40 border-2 border-dashed border-gani-green rounded-full opacity-30"></div>
               <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+                src="https://plus.unsplash.com/premium_photo-1664701474641-5cac183fe215?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Gani Supply Team"
-                className="rounded-lg shadow-lg"
+                className="rounded-lg shadow-lg w-full aspect-3/2"
               />
             </div>
           </div>
@@ -161,7 +161,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative animate-fade-in">
               <img
-                src="https://images.unsplash.com/photo-1487887235947-a955ef187fcc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+                src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Gani Supply Studio"
                 className="rounded-lg shadow-lg"
               />
@@ -171,7 +171,7 @@ const About = () => {
               style={{ animationDelay: "200ms" }}
             >
               <h2 className="text-3xl font-playfair mb-6">
-                Gani Supply Studio
+                Gani Supply Warehouse
               </h2>
               <p className="text-gani-dark/80 mb-4">
                 Beyond our curated collection, Gani Supply Studio is our

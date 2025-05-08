@@ -52,7 +52,7 @@ const AboutUs = () => {
             <div className="relative">
               <div className="absolute inset-0 border-2 border-gani-green border-dashed rounded-lg transform translate-x-4 translate-y-4"></div>
               <img
-                src="https://images.unsplash.com/photo-1534511902651-6ab0ce131f2a?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://media.gettyimages.com/id/1740856436/video/large-lumber-factory-it-is-a-factory-that-produces-shaped-wood-and-is-a-warehouse-store-for.jpg?s=640x640&k=20&c=Gqz6or6v2c__C1goHOs23t7ftJuw02P9iOC7W-z4MHY="
                 alt="Gani Supply studio"
                 className="relative z-10 w-full h-auto object-cover rounded-lg shadow-lg"
               />
