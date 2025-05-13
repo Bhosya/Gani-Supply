@@ -9,7 +9,7 @@ const Footer = () => {
   const { t } = useLanguage();
 
   return (
-    <footer className="bg-gani-dark text-white pt-16 pb-8 px-6 md:px-10">
+    <footer className="bg-gani-dark text-white pt-16 pb-8 md:px-10">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand column */}
@@ -105,10 +105,10 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/journal"
+                  to="/gallery"
                   className="text-white/70 hover:text-white transition-colors"
                 >
-                  {t("journal")}
+                  {t("gallery")}
                 </Link>
               </li>
               <li>

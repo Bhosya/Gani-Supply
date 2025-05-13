@@ -9,7 +9,7 @@ const ContactSection = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-20 px-6 md:px-10 bg-white relative overflow-hidden">
+    <section className="py-20 md:px-10 bg-white relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-gani-cream/50 to-white"></div>
       <div className="absolute top-40 right-20 w-32 h-32 rounded-full border-2 border-dashed border-gani-green/20 animate-gentle-float"></div>
@@ -24,7 +24,7 @@ const ContactSection = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact form */}
-          <div className="bg-white p-8 rounded-lg shadow-sm animate-fade-in">
+          <div className="bg-white py-8 rounded-lg animate-fade-in">
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>

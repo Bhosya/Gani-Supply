@@ -7,7 +7,7 @@ const AboutUs = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-20 px-6 md:px-10 bg-gani-cream relative overflow-hidden">
+    <section className="py-20 md:px-10 bg-gani-cream relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute -right-20 -bottom-20 w-64 h-64 rounded-full border-2 border-dashed border-gani-green/30"></div>
       <div className="absolute left-10 top-10 w-16 h-16 border-2 border-gani-green/30"></div>

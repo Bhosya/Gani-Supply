@@ -4,8 +4,11 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import Newsletter from "@/components/Newsletter";
 import PageHero from "@/components/PageHero";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Products = () => {
+  const { t } = useLanguage();
+
   useEffect(() => {
     // Scroll to top when the component mounts
     window.scrollTo(0, 0);
@@ -16,31 +19,26 @@ const Products = () => {
     {
       id: 1,
       name: "Hardwood Charcoal",
-      price: 89,
       image: "images/hardwoordCharcoal.jpeg",
     },
     {
       id: 2,
       name: "Sawdust",
-      price: 249,
       image: "images/sawdust.jpg",
     },
     {
       id: 3,
       name: "Bricket",
-      price: 175,
       image: "images/charcoal.jpg",
     },
     {
       id: 4,
       name: "Wood Pellet",
-      price: 120,
       image: "images/woodPellet.webp",
     },
     {
       id: 5,
       name: "Wood Chip",
-      price: 320,
       image: "images/woodChip.webp",
     },
   ];
@@ -49,8 +47,8 @@ const Products = () => {
     <div className="min-h-screen">
       <Navbar />
       <PageHero
-        title="Our Collection"
-        description="Each piece in our collection has been carefully selected for its unique character, quality craftsmanship, and ability to transform everyday moments."
+        title={t("curatedCollection")}
+        description={t("collectionDescription")}
         imageUrl="https://mieco.com.my/wp-content/uploads/2023/10/RUBBER-WOOD-3-scaled.jpg"
       />
 
@@ -69,22 +67,23 @@ const Products = () => {
                     alt={product.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <Button className="w-full bg-gani-green hover:bg-gani-green-dark text-white">
-                      View Details
-                    </Button>
-                  </div>
                 </div>
                 <div className="p-4">
-                  <h3 className="font-playfair text-lg mt-1">{product.name}</h3>
-                  <div className="mt-2 font-medium">${product.price}</div>
+                  <h3 className="font-playfair text-lg mt-1 mb-1">
+                    {product.name}
+                  </h3>
+                  <Button className="w-full bg-gani-green hover:bg-gani-green-dark text-white">
+                    {t("viewDetails")}
+                  </Button>
                 </div>
               </div>
             ))}
             {/* CTA Block */}
             <div className="flex items-center justify-center aspect-square bg-gani-green text-white text-center transition-colors duration-300">
               <div>
-                <h3 className="text-9xl font-bold mb-1">Buy Now</h3>
+                <h3 className="text-7xl font-bold mb-1">
+                  {t("viewAllProducts")}
+                </h3>
               </div>
             </div>
           </div>

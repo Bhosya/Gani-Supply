@@ -14,7 +14,7 @@ const translations = {
     home: "Home",
     products: "Products",
     about: "About Us",
-    journal: "Journal",
+    gallery: "Gallery",
     contact: "Contact",
 
     // Hero Section
@@ -35,9 +35,9 @@ const translations = {
     ourStory: "OUR STORY",
     storyTitle: "Rooted in Nature, Crafted for Industry",
     storyDescription1:
-      "At Gani Supply, our story begins with the essence of nature — wood. Since our founding, we’ve focused on transforming responsibly sourced wood into essential products that power homes, businesses, and industries.",
+      "At Gani Supply, our story begins with the essence of nature — wood. Since our founding, we've focused on transforming responsibly sourced wood into essential products that power homes, businesses, and industries.",
     storyDescription2:
-      "We believe in the balance between utility and sustainability. That’s why our products are not only built to perform but also aligned with environmentally conscious practices. Whether you’re a small business or a large-scale manufacturer, we deliver the quality and consistency you can rely on.",
+      "We believe in the balance between utility and sustainability. That's why our products are not only built to perform but also aligned with environmentally conscious practices. Whether you're a small business or a large-scale manufacturer, we deliver the quality and consistency you can rely on.",
     ourJourney: "Our Journey",
     milestone1:
       "Founded in Jakarta with a small collection of handcrafted items.",
@@ -82,23 +82,11 @@ const translations = {
     privacyConsent:
       "By subscribing, you agree to our Privacy Policy and consent to receive updates from Gani Supply.",
 
-    // Journal Section
-    journalDescription:
-      "Stories, inspirations, and behind-the-scenes glimpses from the world of Gani Supply.",
-    viewAllArticles: "View all articles",
-    readMore: "Read More",
-    journalEntry1Title: "The Art of Slow Living",
-    journalEntry1Category: "Lifestyle",
-    journalEntry1Excerpt:
-      "Exploring how thoughtful design choices can help create spaces that encourage mindfulness and presence in daily life.",
-    journalEntry2Title: "Behind the Craft: Traditional Indonesian Textiles",
-    journalEntry2Category: "Craftsmanship",
-    journalEntry2Excerpt:
-      "A look into the centuries-old techniques that inspire our textile collection, and the artisans keeping these traditions alive.",
-    journalEntry3Title: "Seasonal Styling: Embracing Natural Elements",
-    journalEntry3Category: "Design",
-    journalEntry3Excerpt:
-      "How to incorporate organic materials and seasonal changes into your home for a dynamic, evolving space.",
+    // Gallery Section
+    galleryDescription:
+      "Explore our collection of high-quality wood products, charcoal, and industrial solutions.",
+    viewAllImages: "View all images",
+    viewDetails: "View Details",
 
     // Contact Section
     getInTouch: "Get In Touch",
@@ -126,7 +114,7 @@ const translations = {
     home: "Beranda",
     products: "Produk",
     about: "Tentang Kami",
-    journal: "Jurnal",
+    gallery: "Galeri",
     contact: "Kontak",
 
     // Hero Section
@@ -148,18 +136,18 @@ const translations = {
     ourStory: "CERITA KAMI",
     storyTitle: "Berakar dari Alam, Dibentuk untuk Industri",
     storyDescription1:
-      "Gani Supply lahir dari filosofi sederhana: memaksimalkan potensi alami kayu menjadi solusi industri yang andal dan berkelanjutan. Kami menyediakan berbagai produk berbasis kayu seperti arang hardwood premium, serbuk gergaji, briket, wood chip, hingga palet kayu yang presisi — semua melalui proses seleksi dan produksi yang teliti.",
+      "Di Gani Supply, cerita kami dimulai dengan esensi alam — kayu. Sejak pendirian kami, kami fokus pada transformasi kayu yang bersumber secara bertanggung jawab menjadi produk-produk penting yang mendukung rumah tangga, bisnis, dan industri.",
     storyDescription2:
-      "Kami percaya bahwa fungsi dan kelestarian bisa berjalan seimbang. Setiap produk kami dibuat untuk memenuhi standar performa tinggi sekaligus menjaga komitmen terhadap lingkungan. Baik Anda pelaku UMKM maupun perusahaan besar, kami hadir sebagai mitra penyedia bahan yang berkualitas, stabil, dan terpercaya.",
+      "Kami percaya pada keseimbangan antara utilitas dan keberlanjutan. Itulah mengapa produk kami tidak hanya dibangun untuk berkinerja baik tetapi juga selaras dengan praktik yang sadar lingkungan. Baik Anda adalah bisnis kecil atau produsen skala besar, kami memberikan kualitas dan konsistensi yang dapat Anda andalkan.",
     ourJourney: "Perjalanan Kami",
     milestone1:
-      "Didirikan di Jakarta dengan koleksi kecil barang-barang buatan tangan.",
+      "Didirikan di Jakarta dengan koleksi kecil barang-barang kerajinan tangan.",
     milestone2:
       "Berkembang untuk mencakup pengrajin internasional dan membuka toko utama kami.",
     milestone3:
       "Meluncurkan inisiatif keberlanjutan dan kolaborasi eksklusif dengan pengrajin.",
     milestone4:
-      "Melihat ke depan: Menciptakan komunitas global para penggemar desain.",
+      "Melihat ke depan: Menciptakan komunitas global penggemar desain.",
 
     // Contact Section
     contactUs: "Hubungi Kami",
@@ -195,23 +183,11 @@ const translations = {
     privacyConsent:
       "Dengan berlangganan, Anda menyetujui Kebijakan Privasi kami dan menyetujui untuk menerima pembaruan dari Gani Supply.",
 
-    // Journal Section
-    journalDescription:
-      "Cerita, inspirasi, dan sekilas di balik layar dari dunia Gani Supply.",
-    viewAllArticles: "Lihat semua artikel",
-    readMore: "Baca Selengkapnya",
-    journalEntry1Title: "Seni Hidup Perlahan",
-    journalEntry1Category: "Gaya Hidup",
-    journalEntry1Excerpt:
-      "Menjelajahi bagaimana pilihan desain yang bijaksana dapat membantu menciptakan ruang yang mendorong kesadaran dan kehadiran dalam kehidupan sehari-hari.",
-    journalEntry2Title: "Di Balik Kerajinan: Tekstil Tradisional Indonesia",
-    journalEntry2Category: "Kerajinan",
-    journalEntry2Excerpt:
-      "Melihat teknik berabad-abad yang menginspirasi koleksi tekstil kami, dan para pengrajin yang menjaga tradisi ini tetap hidup.",
-    journalEntry3Title: "Penataan Musiman: Merangkul Elemen Alami",
-    journalEntry3Category: "Desain",
-    journalEntry3Excerpt:
-      "Cara menggabungkan bahan organik dan perubahan musiman ke dalam rumah Anda untuk ruang yang dinamis dan terus berkembang.",
+    // Gallery Section
+    galleryDescription:
+      "Jelajahi koleksi produk kayu berkualitas, arang, dan solusi industri kami.",
+    viewAllImages: "Lihat semua gambar",
+    viewDetails: "Lihat Detail",
 
     // Contact Section
     getInTouch: "Hubungi Kami",
@@ -239,36 +215,35 @@ const translations = {
     home: "الرئيسية",
     products: "المنتجات",
     about: "من نحن",
-    journal: "المجلة",
+    gallery: "معرض الصور",
     contact: "اتصل بنا",
 
     // Hero Section
     exploreCollection: "استكشف المجموعة",
     ourPhilosophy: "فلسفتنا",
-    artisticEssentials:
-      "الأساسيات الفنية للحياة منتجات خشبية عالية الجودة للاستخدام اليومي والصناعي",
+    artisticEssentials: "خشب عالي الجودة للاستخدام اليومي والصناعي",
     curatedDescription:
-      "اكتشف مجموعتنا المختارة من المنتجات الخشبية — من الفحم الممتاز إلى المنصات الخشبية المستدامة — المصممة للأداء والمتانة والاستدامة.",
+      "اكتشف مجموعتنا المختارة من المنتجات الخشبية — من الفحم الممتاز إلى منصات الخشب المستدامة — مصممة للأداء والمتانة والاستدامة.",
 
     // Product Section
     viewAllProducts: "عرض جميع المنتجات",
     curatedCollection: "مجموعة مختارة",
     collectionDescription:
-      "كل قطعة في مجموعتنا تحكي قصة، مختارة بعناية لجمالها ووظائفها وحرفيتها.",
+      "كل قطعة في مجموعتنا تحكي قصة، تم اختيارها بعناية لجمالها ووظيفيتها وحرفيتها.",
     viewDetails: "عرض التفاصيل",
 
     // About Section
     ourStory: "قصتنا",
     storyTitle: "متجذرة في الطبيعة، مصممة للصناعة",
     storyDescription1:
-      "تأسست Gani Supply على مبدأ تحويل موارد الطبيعة إلى منتجات صناعية عالية الكفاءة. نقدم مجموعة من المنتجات الخشبية التي تشمل فحم الخشب الصلب، نشارة الخشب، البريكيت، شرائح الخشب، ومنصات التحميل — جميعها مصنوعة بعناية لضمان الجودة والاستدامة.",
+      "في Gani Supply، تبدأ قصتنا مع جوهر الطبيعة — الخشب. منذ تأسيسنا، ركزنا على تحويل الخشب المصدر بشكل مسؤول إلى منتجات أساسية تدعم المنازل والشركات والصناعات.",
     storyDescription2:
-      "نؤمن بأن الأداء البيئي والتجاري يمكن أن يتعايشا. لذلك، تلتزم منتجاتنا بالمعايير البيئية دون التضحية بالكفاءة. سواء كنت مؤسسة صغيرة أو شركة صناعية كبرى، نحن نضمن لك مواد يمكن الاعتماد عليها باستمرار.",
-    ourJourney: "رحلتنا",
-    milestone1: "تأسست في جاكرتا مع مجموعة صغيرة من القطع المصنوعة يدويًا.",
+      "نؤمن بالتوازن بين المنفعة والاستدامة. لهذا السبب، لا يتم بناء منتجاتنا للأداء فحسب، بل تتماشى أيضًا مع الممارسات الواعية بالبيئة. سواء كنت شركة صغيرة أو مصنعًا كبيرًا، نقدم الجودة والاتساق الذي يمكنك الاعتماد عليه.",
+    ourJourney: "رحلةنا",
+    milestone1: "تأسست في جاكرتا مع مجموعة صغيرة من العناصر المصنوعة يدويًا.",
     milestone2: "توسعت لتشمل الحرفيين الدوليين وافتتحت متجرنا الرئيسي.",
     milestone3: "أطلقت مبادرة الاستدامة والتعاون الحصري مع الحرفيين.",
-    milestone4: "ننظر إلى المستقبل: إنشاء مجتمع عالمي من عشاق التصميم.",
+    milestone4: "نظرة إلى المستقبل: إنشاء مجتمع عالمي من عشاق التصميم.",
 
     // Contact Section
     contactUs: "اتصل بنا",
@@ -304,22 +279,11 @@ const translations = {
     privacyConsent:
       "بالاشتراك، فإنك توافق على سياسة الخصوصية لدينا وتوافق على تلقي التحديثات من Gani Supply.",
 
-    // Journal Section
-    journalDescription: "قصص وإلهام ونظرات خلف الكواليس من عالم Gani Supply.",
-    viewAllArticles: "عرض جميع المقالات",
-    readMore: "اقرأ المزيد",
-    journalEntry1Title: "فن العيش البطيء",
-    journalEntry1Category: "نمط الحياة",
-    journalEntry1Excerpt:
-      "استكشاف كيف يمكن لخيارات التصميم المدروسة أن تساعد في خلق مساحات تشجع على اليقظة والحضور في الحياة اليومية.",
-    journalEntry2Title: "وراء الحرفة: المنسوجات الإندونيسية التقليدية",
-    journalEntry2Category: "الحرفية",
-    journalEntry2Excerpt:
-      "نظرة على التقنيات القديمة التي تلهم مجموعتنا من المنسوجات، والحرفيين الذين يحافظون على هذه التقاليد.",
-    journalEntry3Title: "التنسيق الموسمي: احتضان العناصر الطبيعية",
-    journalEntry3Category: "التصميم",
-    journalEntry3Excerpt:
-      "كيفية دمج المواد العضوية والتغييرات الموسمية في منزلك لخلق مساحة ديناميكية ومتطورة.",
+    // Gallery Section
+    galleryDescription:
+      "استكشف مجموعتنا من منتجات الخشب عالية الجودة والفحم والحلول الصناعية.",
+    viewAllImages: "عرض جميع الصور",
+    viewDetails: "عرض التفاصيل",
 
     // Contact Section
     getInTouch: "تواصل معنا",
@@ -329,7 +293,7 @@ const translations = {
     message: "الرسالة",
     sendMessage: "إرسال الرسالة",
     visitStore: "زيارة متجرنا",
-    storeName: "المتجر الرئيسي Gani Supply",
+    storeName: "متجر Gani Supply الرئيسي",
     storeAddress: "Jl. Kemang Raya No.123, Jakarta Selatan",
     storeCity: "Indonesia 12730",
     storePhone: "+62 21 1234 5678",
@@ -347,30 +311,30 @@ const translations = {
     home: "首页",
     products: "产品",
     about: "关于我们",
-    journal: "期刊",
+    gallery: "图片库",
     contact: "联系我们",
 
     // Hero Section
     exploreCollection: "探索系列",
     ourPhilosophy: "我们的理念",
-    artisticEssentials: "优质木制产品，适用于日常和工业用途",
+    artisticEssentials: "高品质木材，满足日常和工业需求",
     curatedDescription:
-      "探索我们精心挑选的木质产品系列——从优质木炭到可持续木托盘——专为高性能、耐用性和可持续性而打造。",
+      "探索我们精选的木质产品系列 — 从优质木炭到可持续木托盘 — 为性能、耐用性和可持续性而设计。",
 
     // Product Section
     viewAllProducts: "查看所有产品",
     curatedCollection: "精选系列",
     collectionDescription:
-      "我们系列中的每一件作品都讲述着一个故事，精心挑选其美感、功能性和工艺。",
+      "我们系列中的每一件产品都讲述着一个故事，因其美观、功能和工艺而被精心挑选。",
     viewDetails: "查看详情",
 
     // About Section
     ourStory: "我们的故事",
-    storyTitle: "扎根自然，服务工业",
+    storyTitle: "源于自然，为工业而设计",
     storyDescription1:
-      "Gani Supply 的故事源于自然对木材的馈赠。我们致力于将天然木材转化为高效、可持续的产品，涵盖硬木炭、锯末、压块、木托盘及木屑等核心品类，广泛应用于家庭、商业及工业领域。",
+      "在Gani Supply，我们的故事始于自然的本质 — 木材。自成立以来，我们一直专注于将负责任采购的木材转化为支持家庭、企业和工业的基本产品。",
     storyDescription2:
-      "我们坚信品质与环保可以共存。每一件产品都体现了我们对工艺的执着和对环境的责任。不论您是中小企业还是大型制造商，我们始终如一地提供您值得信赖的木制品解决方案。",
+      "我们相信实用性和可持续性之间的平衡。这就是为什么我们的产品不仅是为了性能而建造，而且还要符合环保意识的做法。无论您是小型企业还是大型制造商，我们都提供您可以信赖的质量和一致性。",
     ourJourney: "我们的历程",
     milestone1: "在雅加达成立，拥有小型手工制品系列。",
     milestone2: "扩展至国际工匠并开设旗舰店。",
@@ -409,22 +373,10 @@ const translations = {
     privacyConsent:
       "订阅即表示您同意我们的隐私政策并同意接收来自Gani Supply的更新。",
 
-    // Journal Section
-    journalDescription: "来自Gani Supply世界的故事、灵感和幕后花絮。",
-    viewAllArticles: "查看所有文章",
-    readMore: "阅读更多",
-    journalEntry1Title: "慢生活的艺术",
-    journalEntry1Category: "生活方式",
-    journalEntry1Excerpt:
-      "探索深思熟虑的设计选择如何帮助创造鼓励正念和日常存在感的空间。",
-    journalEntry2Title: "工艺背后：传统印尼纺织品",
-    journalEntry2Category: "工艺",
-    journalEntry2Excerpt:
-      "深入了解启发我们纺织品收藏的百年技艺，以及保持这些传统活力的工匠们。",
-    journalEntry3Title: "季节性装饰：拥抱自然元素",
-    journalEntry3Category: "设计",
-    journalEntry3Excerpt:
-      "如何将有机材料和季节性变化融入您的家中，打造充满活力的动态空间。",
+    // Gallery Section
+    galleryDescription: "探索我们的高品质木材产品、木炭和工业解决方案系列。",
+    viewAllImages: "查看所有图片",
+    viewDetails: "查看详情",
 
     // Contact Section
     getInTouch: "联系我们",

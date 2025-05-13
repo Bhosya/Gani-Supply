@@ -12,11 +12,11 @@ const HeroSection = () => {
       {/* Background image with overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="images/woodChip.webp"
+          src="https://hswf.co.uk/cdn/shop/articles/art-charcoal-making-ancient-craft-modern-practice-hillside-woodfuels-handful-pieces.webp?v=1725512007&width=1400"
           alt="Gani Supply Hero"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-gani-dark/70 to-gani-dark/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/10"></div>
       </div>
 
       <div className="container px-6 md:px-10 z-10">

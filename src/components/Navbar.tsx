@@ -5,12 +5,14 @@ import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
 import LanguageSelector from "./LanguageSelector";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
   const { t } = useLanguage();
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -91,17 +93,17 @@ const Navbar = () => {
             {t("about")}
           </Link>
           <Link
-            to="/journal"
+            to="/gallery"
             className={cn(
               "font-medium transition-colors duration-300",
               scrolled
                 ? "text-gani-green hover:text-gani-green-dark"
-                : location.pathname === "/journal"
+                : location.pathname === "/gallery"
                 ? "text-white"
                 : "text-gani-cream hover:text-white"
             )}
           >
-            {t("journal")}
+            {t("gallery")}
           </Link>
           <Link
             to="/contact"
@@ -172,11 +174,11 @@ const Navbar = () => {
             {t("about")}
           </Link>
           <Link
-            to="/journal"
+            to="/gallery"
             className="text-white hover:text-gani-cream"
             onClick={() => setIsOpen(false)}
           >
-            {t("journal")}
+            {t("gallery")}
           </Link>
           <Link
             to="/contact"

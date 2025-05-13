@@ -1,13 +1,12 @@
-
-import React, { useEffect } from 'react';
-import Navbar from '@/components/Navbar';
-import HeroSection from '@/components/HeroSection';
-import ProductShowcase from '@/components/ProductShowcase';
-import AboutUs from '@/components/AboutUs';
-import ContactSection from '@/components/ContactSection';
-import JournalPreview from '@/components/JournalPreview';
-import Newsletter from '@/components/Newsletter';
-import Footer from '@/components/Footer';
+import React, { useEffect } from "react";
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import ProductShowcase from "@/components/ProductShowcase";
+import AboutUs from "@/components/AboutUs";
+import ContactSection from "@/components/ContactSection";
+import Gallery from "@/components/Gallery";
+import Newsletter from "@/components/Newsletter";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   useEffect(() => {
@@ -21,9 +20,9 @@ const Index = () => {
       <HeroSection />
       <ProductShowcase />
       <AboutUs />
-      <Newsletter />
-      <JournalPreview />
+      <Gallery />
       <ContactSection />
+      <Newsletter />
       <Footer />
     </div>
   );

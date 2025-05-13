@@ -9,31 +9,26 @@ const products = [
   {
     id: 1,
     name: "Hardwood Charcoal",
-    price: "$89",
     image: "images/hardwoordCharcoal.jpeg",
   },
   {
     id: 2,
     name: "Sawdust",
-    price: "$245",
     image: "images/sawdust.jpg",
   },
   {
     id: 3,
     name: "Bricket",
-    price: "$65",
     image: "images/charcoal.jpg",
   },
   {
     id: 4,
     name: "Wood Pellet",
-    price: "$245",
     image: "images/woodPellet.webp",
   },
   {
     id: 5,
     name: "Wood Chip",
-    price: "$65",
     image: "images/woodChip.webp",
   },
 ];
@@ -55,11 +50,10 @@ const ProductCard = ({ product, index }: { product: any; index: number }) => {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
           <span className="text-white/90 text-sm">{product.category}</span>
-          <h3 className="text-white font-playfair text-lg md:text-xl">
-            {product.name}
-          </h3>
           <div className="flex items-center justify-between mt-2">
-            <span className="text-white font-medium">{product.price}</span>
+            <h3 className="text-white font-playfair text-lg md:text-xl">
+              {product.name}
+            </h3>
             <Button
               size="sm"
               variant="outline"
@@ -78,7 +72,7 @@ const ProductShowcase = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-20 px-6 md:px-10 bg-white">
+    <section className="py-20 md:px-10 bg-white">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
           <div>
