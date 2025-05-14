@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import ImageModal from "./ImageModal";
 
 // Sample gallery images
 const galleryImages = [
@@ -31,6 +32,9 @@ const galleryImages = [
 
 const Gallery = () => {
   const { t } = useLanguage();
+  const [selectedImage, setSelectedImage] = useState<
+    (typeof galleryImages)[0] | null
+  >(null);
 
   return (
     <section className="py-20 md:px-10 bg-gani-cream/50">
@@ -58,8 +62,9 @@ const Gallery = () => {
           {galleryImages.map((item, index) => (
             <div
               key={item.id}
-              className="relative h-80 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 animate-fade-in group"
+              className="relative h-80 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 animate-fade-in group cursor-pointer"
               style={{ animationDelay: `${index * 150}ms` }}
+              onClick={() => setSelectedImage(item)}
             >
               <img
                 src={item.image}
@@ -74,17 +79,17 @@ const Gallery = () => {
                 <h3 className="font-playfair text-xl text-white mb-3">
                   {item.title}
                 </h3>
-                <Link
-                  to={`/gallery/${item.id}`}
-                  className="text-white font-medium inline-flex items-center hover:underline"
-                >
-                  {t("viewDetails")} <ArrowRight className="ml-1 h-4 w-4" />
-                </Link>
               </div>
             </div>
           ))}
         </div>
       </div>
+
+      <ImageModal
+        isOpen={!!selectedImage}
+        onClose={() => setSelectedImage(null)}
+        image={selectedImage || galleryImages[0]}
+      />
     </section>
   );
 };

@@ -3,13 +3,16 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import { useLanguage } from "@/contexts/LanguageContext";
+import ImageModal from "@/components/ImageModal";
 
 const Gallery = () => {
   const { t } = useLanguage();
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedImage, setSelectedImage] = useState<
+    (typeof galleryImages)[0] | null
+  >(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -111,7 +114,8 @@ const Gallery = () => {
             {filteredImages.map((item) => (
               <div
                 key={item.id}
-                className="relative h-80 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group"
+                className="relative h-80 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group cursor-pointer"
+                onClick={() => setSelectedImage(item)}
               >
                 <img
                   src={item.image}
@@ -123,21 +127,21 @@ const Gallery = () => {
                   <div className="bg-white/80 backdrop-blur-sm px-3 py-1 text-xs font-medium text-gani-dark rounded-full inline-block mb-3">
                     {item.category}
                   </div>
-                  <h3 className="font-playfair text-xl text-white mb-3">
+                  <h3 className="font-playfair text-xl text-white">
                     {item.title}
                   </h3>
-                  <Button
-                    variant="ghost"
-                    className="text-white hover:text-white hover:underline hover:bg-transparent p-0"
-                  >
-                    {t("viewDetails")} <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
                 </div>
               </div>
             ))}
           </div>
         </div>
       </section>
+
+      <ImageModal
+        isOpen={!!selectedImage}
+        onClose={() => setSelectedImage(null)}
+        image={selectedImage || galleryImages[0]}
+      />
 
       <Newsletter />
       <Footer />

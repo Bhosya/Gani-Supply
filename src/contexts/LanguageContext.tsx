@@ -31,6 +31,8 @@ const translations = {
     collectionDescription:
       "Each piece in our collection tells a story, carefully selected for its beauty, functionality, and craftsmanship.",
     viewDetails: "View Details",
+    productDescription: "Product Description",
+    manufacturingProcess: "Manufacturing Process",
 
     // About Section
     ourStory: "OUR STORY",
@@ -133,6 +135,8 @@ const translations = {
     collectionDescription:
       "Setiap produk dalam koleksi kami menceritakan sebuah kisah, dipilih dengan cermat untuk keindahan, fungsionalitas, dan keahliannya.",
     viewDetails: "Lihat Detail",
+    productDescription: "Deskripsi Produk",
+    manufacturingProcess: "Proses Pembuatan",
 
     // About Section
     ourStory: "CERITA KAMI",
@@ -234,6 +238,8 @@ const translations = {
     collectionDescription:
       "كل قطعة في مجموعتنا تحكي قصة، تم اختيارها بعناية لجمالها ووظيفيتها وحرفيتها.",
     viewDetails: "عرض التفاصيل",
+    productDescription: "وصف المنتج",
+    manufacturingProcess: "عملية التصنيع",
 
     // About Section
     ourStory: "قصتنا",
@@ -331,6 +337,8 @@ const translations = {
     collectionDescription:
       "我们系列中的每一件产品都讲述着一个故事，因其美观、功能和工艺而被精心挑选。",
     viewDetails: "查看详情",
+    productDescription: "产品描述",
+    manufacturingProcess: "制造工艺",
 
     // About Section
     ourStory: "我们的故事",
