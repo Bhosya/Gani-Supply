@@ -30,7 +30,7 @@ const About = () => {
       />
 
       {/* Vision & Mission Section */}
-      <section className="py-20 px-6 md:px-10 relative overflow-hidden">
+      <section className="py-20 md:px-10 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-gani-green/10 via-gani-cream/20 to-gani-green/5"></div>
         <div className="container mx-auto relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
@@ -81,7 +81,7 @@ const About = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 px-6 md:px-10 bg-gradient-to-br from-gani-green/5 via-white to-gani-cream/30 relative">
+      <section className="py-20 md:px-10 bg-gradient-to-br from-gani-green/5 via-white to-gani-cream/30 relative">
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-16">
             <span className="text-gani-green font-semibold tracking-wider uppercase text-sm bg-gani-green/10 px-4 py-2 rounded-full">
@@ -181,7 +181,7 @@ const About = () => {
       </section>
 
       {/* Export Quality Section */}
-      <section className="py-20 px-6 md:px-10 relative overflow-hidden">
+      <section className="py-20 md:px-10 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-gani-green/10 via-gani-cream/20 to-gani-green/5"></div>
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-16">
@@ -199,7 +199,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="bg-white p-8 rounded-2xl shadow-lg border border-gani-green/10 hover:border-gani-green/20 transition-all duration-300">
-                <div className="flex items-start gap-6">
+                <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-gani-green/20 to-gani-green/10 rounded-xl flex items-center justify-center flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -216,7 +216,7 @@ const About = () => {
                       />
                     </svg>
                   </div>
-                  <div>
+                  <div className="text-center md:text-left">
                     <h3 className="text-2xl font-semibold mb-3 text-gani-dark">
                       International Standards
                     </h3>
@@ -230,7 +230,7 @@ const About = () => {
               </div>
 
               <div className="bg-white p-8 rounded-2xl shadow-lg border border-gani-green/10 hover:border-gani-green/20 transition-all duration-300">
-                <div className="flex items-start gap-6">
+                <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-gani-green/20 to-gani-green/10 rounded-xl flex items-center justify-center flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -247,7 +247,7 @@ const About = () => {
                       />
                     </svg>
                   </div>
-                  <div>
+                  <div className="text-center md:text-left">
                     <h3 className="text-2xl font-semibold mb-3 text-gani-dark">
                       Quality Control
                     </h3>
@@ -261,7 +261,7 @@ const About = () => {
               </div>
 
               <div className="bg-white p-8 rounded-2xl shadow-lg border border-gani-green/10 hover:border-gani-green/20 transition-all duration-300">
-                <div className="flex items-start gap-6">
+                <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-gani-green/20 to-gani-green/10 rounded-xl flex items-center justify-center flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -278,7 +278,7 @@ const About = () => {
                       />
                     </svg>
                   </div>
-                  <div>
+                  <div className="text-center md:text-left">
                     <h3 className="text-2xl font-semibold mb-3 text-gani-dark">
                       Global Reach
                     </h3>
@@ -314,7 +314,7 @@ const About = () => {
       </section>
 
       {/* Company Values Section */}
-      <section className="py-20 px-6 md:px-10 relative overflow-hidden">
+      <section className="py-20 md:px-10 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-gani-green/10 via-gani-cream/20 to-gani-green/5"></div>
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-16">
@@ -434,7 +434,7 @@ const About = () => {
       </section>
 
       {/* Contact CTA Section */}
-      <section className="py-20 px-6 md:px-10 bg-gradient-to-br from-gani-green/20 via-gani-green/10 to-gani-cream/30">
+      <section className="py-20 md:px-10 bg-gradient-to-br from-gani-green/20 via-gani-green/10 to-gani-cream/30">
         <div className="container mx-auto text-center max-w-4xl">
           <h2 className="text-4xl font-playfair mb-6 text-gani-dark">
             Ready to Partner With Us?

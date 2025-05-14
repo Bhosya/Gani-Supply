@@ -82,24 +82,28 @@ const Gallery = () => {
         imageUrl="https://plus.unsplash.com/premium_photo-1683417272601-dbbfed0ed718?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       />
 
-      <section className="py-16 px-6 md:px-10 bg-gani-cream">
+      <section className="py-7 md:py-16 md:px-10 bg-gani-cream">
         <div className="container mx-auto">
           {/* Category Filter */}
-          <div className="flex flex-wrap gap-4 mb-12 justify-center">
-            {categories.map((category) => (
-              <Button
-                key={category}
-                variant={selectedCategory === category ? "default" : "outline"}
-                className={`${
-                  selectedCategory === category
-                    ? "bg-gani-green text-white"
-                    : "text-gani-dark hover:bg-gani-green/10"
-                }`}
-                onClick={() => setSelectedCategory(category)}
-              >
-                {category}
-              </Button>
-            ))}
+          <div className="overflow-x-auto pb-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+            <div className="flex gap-4 mb-4 md:mb-12 min-w-max">
+              {categories.map((category) => (
+                <Button
+                  key={category}
+                  variant={
+                    selectedCategory === category ? "default" : "outline"
+                  }
+                  className={`shadow-md ${
+                    selectedCategory === category
+                      ? "bg-gani-green text-white"
+                      : "text-gani-dark hover:bg-gani-green/10"
+                  }`}
+                  onClick={() => setSelectedCategory(category)}
+                >
+                  {category}
+                </Button>
+              ))}
+            </div>
           </div>
 
           {/* Gallery Grid */}

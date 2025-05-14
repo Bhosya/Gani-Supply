@@ -26,6 +26,7 @@ const translations = {
 
     // Product Section
     viewAllProducts: "View all products",
+    buyNow: "Buy Now",
     curatedCollection: "Curated Collection",
     collectionDescription:
       "Each piece in our collection tells a story, carefully selected for its beauty, functionality, and craftsmanship.",
@@ -127,6 +128,7 @@ const translations = {
 
     // Product Section
     viewAllProducts: "Lihat semua produk",
+    buyNow: "Beli Sekarang",
     curatedCollection: "Koleksi Terpilih",
     collectionDescription:
       "Setiap produk dalam koleksi kami menceritakan sebuah kisah, dipilih dengan cermat untuk keindahan, fungsionalitas, dan keahliannya.",
@@ -227,6 +229,7 @@ const translations = {
 
     // Product Section
     viewAllProducts: "عرض جميع المنتجات",
+    buyNow: "اشتر الآن",
     curatedCollection: "مجموعة مختارة",
     collectionDescription:
       "كل قطعة في مجموعتنا تحكي قصة، تم اختيارها بعناية لجمالها ووظيفيتها وحرفيتها.",
@@ -323,6 +326,7 @@ const translations = {
 
     // Product Section
     viewAllProducts: "查看所有产品",
+    buyNow: "立即购买",
     curatedCollection: "精选系列",
     collectionDescription:
       "我们系列中的每一件产品都讲述着一个故事，因其美观、功能和工艺而被精心挑选。",

@@ -145,44 +145,44 @@ const Navbar = () => {
       {/* Mobile Navigation Menu */}
       <div
         className={cn(
-          "fixed inset-0 bg-gani-dark/95 backdrop-blur-md z-40 flex flex-col items-center justify-center md:hidden transition-all duration-300",
+          "fixed inset-0 h-screen bg-gani-dark/95 backdrop-blur-md z-40 flex flex-col items-center justify-center md:hidden transition-all duration-300",
           isOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
         )}
       >
-        <div className="flex flex-col items-center space-y-8 text-xl">
+        <div className="flex flex-col items-center justify-center space-y-8 text-xl pt-16 pb-8 overflow-y-auto w-full h-full">
           <Link
             to="/"
-            className="text-white hover:text-gani-cream"
+            className="text-white hover:text-gani-cream transition-colors duration-200"
             onClick={() => setIsOpen(false)}
           >
             {t("home")}
           </Link>
           <Link
             to="/products"
-            className="text-white hover:text-gani-cream"
+            className="text-white hover:text-gani-cream transition-colors duration-200"
             onClick={() => setIsOpen(false)}
           >
             {t("products")}
           </Link>
           <Link
             to="/about"
-            className="text-white hover:text-gani-cream"
+            className="text-white hover:text-gani-cream transition-colors duration-200"
             onClick={() => setIsOpen(false)}
           >
             {t("about")}
           </Link>
           <Link
             to="/gallery"
-            className="text-white hover:text-gani-cream"
+            className="text-white hover:text-gani-cream transition-colors duration-200"
             onClick={() => setIsOpen(false)}
           >
             {t("gallery")}
           </Link>
           <Link
             to="/contact"
-            className="text-white hover:text-gani-cream"
+            className="text-white hover:text-gani-cream transition-colors duration-200"
             onClick={() => setIsOpen(false)}
           >
             {t("contact")}

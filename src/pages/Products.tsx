@@ -52,7 +52,7 @@ const Products = () => {
         imageUrl="https://mieco.com.my/wp-content/uploads/2023/10/RUBBER-WOOD-3-scaled.jpg"
       />
 
-      <section className="py-16 px-6 md:px-10 bg-gani-cream">
+      <section className="py-16 md:px-10 bg-gani-cream">
         <div className="container mx-auto">
           {/* Products Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -80,9 +80,9 @@ const Products = () => {
             ))}
             {/* CTA Block */}
             <div className="flex items-center justify-center aspect-square bg-gani-green text-white text-center transition-colors duration-300">
-              <div>
-                <h3 className="text-7xl font-bold mb-1">
-                  {t("viewAllProducts")}
+              <div className="px-4">
+                <h3 className="text-5xl md:text-7xl font-bold mb-1">
+                  {t("buyNow")}
                 </h3>
               </div>
             </div>
