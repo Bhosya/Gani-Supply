@@ -394,8 +394,8 @@ const translations = {
 
     bricketStep1: "Pencampuran bubuk arang dengan pengikat alami",
     bricketStep2: "Pemampatan menjadi bentuk yang seragam",
-    bricketStep3: "Drying process",
-    bricketStep4: "Quality testing",
+    bricketStep3: "Proses pengeringan",
+    bricketStep4: "Pengujian kualitas",
     bricketStep5: "Pengemasan dan distribusi",
 
     bricketBBQStep1: "Pemilihan arang premium dan pengikat alami",
@@ -592,7 +592,7 @@ const translations = {
     // Product Names and Descriptions
     hardwoodCharcoal: "فحم الخشب الصلب",
     hardwoodCharcoalDesc:
-      "فحم خشب صلب فاخر مصنوع من الأخشاب المستدامة. يتميز فحم الخشب الصلب لدينا بوقت احتراق طويل، وإنتاج حرارة عالي، وتدخين minimal. مثالي للاستخدام التجاري والسكني.",
+      "فحم خشب صلب فاخر مصنوع من أخشاب مستدامة. يتميز فحمنا بوقت احتراق طويل، وإنتاج حرارة عالٍ، ودخان منخفض. مثالي للاستخدام التجاري والمنزلي.",
     sawdust: "نشارة الخشب",
     sawdustDesc:
       "نشارة خشب عالية الجودة تنتج من عمليات معالجة الخشب لدينا. يتم جمع هذا المنتج الثانوي ومعالجته بعناية لضمان الاتساق والنظافة. مثالي لمختلف التطبيقات الصناعية.",
@@ -601,7 +601,7 @@ const translations = {
       "فحم مضغوط مصنوع من مزيج من الفحم الفاخر والمواد الرابطة الطبيعية. يوفر الفحم المضغوط لدينا حرارة ثابتة ومثالي للشواء والتطبيقات الصناعية.",
     bricketBBQ: "فحم الشواء المضغوط",
     bricketBBQDesc:
-      "فحم شواء مضغوط فاخر مصمم خصيصًا للشواء والتدخين. يوفر فحم الشواء المضغوط لدينا حرارة طويلة الأمد، ودرجة حرارة ثابتة، وإنتاج رماد minimal، مثالي للشواء الاحترافي والمنزلي.",
+      "فحم شواء مضغوط فاخر مصمم خصيصًا للشواء والتدخين. يوفر فحمنا حرارة طويلة الأمد، ودرجة حرارة ثابتة، وإنتاج رماد منخفض، مما يجعله مثاليًا للشواء الاحترافي والمنزلي.",
     woodPellet: "حبيبات الخشب",
     woodPelletDesc:
       "حبيبات خشب فاخرة مصنوعة من نشارة الخشب وفضلات الخشب المضغوطة. تم تصميم حبيباتنا للكفاءة العالية والانبعاثات المنخفضة، مما يجعلها مثالية لأنظمة التدفئة والاستخدام الصناعي.",
@@ -821,7 +821,7 @@ const translations = {
     bricket: "木炭块",
     bricketDesc:
       "由优质木炭和天然粘合剂制成的压缩木炭块。我们的木炭块提供稳定的热量输出，非常适合烧烤和工业应用。",
-    bricketBBQ: "烧烤木炭块",
+    bricketBBQ: "烧烤炭块",
     bricketBBQDesc:
       "烧烤木炭块专门为烧烤和烟熏而设计。我们的烧烤木炭块提供持久的热量、一致的温度和最小的灰分生产，非常适合专业和家庭烧烤。",
     woodPellet: "木颗粒",

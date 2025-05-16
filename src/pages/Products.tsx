@@ -22,8 +22,7 @@ const Products = () => {
       id: 1,
       nameKey: "hardwoodCharcoal",
       image: "images/grayCharcoal.jpg",
-      description:
-        "Premium hardwood charcoal made from sustainably sourced timber. Our hardwood charcoal is known for its long burning time, high heat output, and minimal smoke production. Perfect for both commercial and residential use.",
+      description: "hardwoodCharcoalDesc",
       process: [
         "hardwoodCharcoalStep1",
         "hardwoodCharcoalStep2",
@@ -36,8 +35,7 @@ const Products = () => {
       id: 2,
       nameKey: "sawdust",
       image: "images/charkol.jpg",
-      description:
-        "High-quality sawdust produced from our wood processing operations. This byproduct is carefully collected and processed to ensure consistency and cleanliness. Ideal for various industrial applications.",
+      description: "sawdustDesc",
       process: [
         "sawdustStep1",
         "sawdustStep2",
@@ -50,8 +48,7 @@ const Products = () => {
       id: 3,
       nameKey: "bricket",
       image: "images/charcoal.jpg",
-      description:
-        "Compressed charcoal briquettes made from a blend of premium charcoal and natural binders. Our briquettes offer consistent heat output and are perfect for grilling and industrial applications.",
+      description: "bricketDesc",
       process: [
         "bricketStep1",
         "bricketStep2",
@@ -61,11 +58,10 @@ const Products = () => {
       ],
     },
     {
-      id: 7,
+      id: 4,
       nameKey: "bricketBBQ",
       image: "images/bricketBBQ.jpg",
-      description:
-        "Premium BBQ briquettes specially designed for grilling and smoking. Our BBQ briquettes provide long-lasting heat, consistent temperature, and minimal ash production, perfect for both professional and home grilling.",
+      description: "bricketBBQDesc",
       process: [
         "bricketBBQStep1",
         "bricketBBQStep2",
@@ -75,11 +71,10 @@ const Products = () => {
       ],
     },
     {
-      id: 4,
+      id: 5,
       nameKey: "woodPellet",
       image: "images/woodPellet.webp",
-      description:
-        "Premium wood pellets made from compressed sawdust and wood waste. Our pellets are designed for high efficiency and low emissions, making them ideal for heating systems and industrial use.",
+      description: "woodPelletDesc",
       process: [
         "woodPelletStep1",
         "woodPelletStep2",
@@ -89,11 +84,10 @@ const Products = () => {
       ],
     },
     {
-      id: 5,
+      id: 6,
       nameKey: "woodChip",
       image: "images/woodChip.webp",
-      description:
-        "High-quality wood chips produced from various wood species. Our wood chips are processed to ensure consistent size and quality, suitable for multiple industrial applications.",
+      description: "woodChipDesc",
       process: [
         "woodChipStep1",
         "woodChipStep2",
@@ -103,11 +97,10 @@ const Products = () => {
       ],
     },
     {
-      id: 6,
+      id: 7,
       nameKey: "fireWood",
       image: "images/firewood.jpg",
-      description:
-        "Premium firewood sourced from sustainable forests. Our firewood is carefully selected, properly seasoned, and cut to optimal sizes for efficient burning. Perfect for fireplaces, outdoor fire pits, and industrial heating applications.",
+      description: "fireWoodDesc",
       process: [
         "fireWoodStep1",
         "fireWoodStep6",
