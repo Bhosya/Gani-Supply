@@ -61,6 +61,20 @@ const Products = () => {
       ],
     },
     {
+      id: 7,
+      nameKey: "bricketBBQ",
+      image: "images/bricketBBQ.jpg",
+      description:
+        "Premium BBQ briquettes specially designed for grilling and smoking. Our BBQ briquettes provide long-lasting heat, consistent temperature, and minimal ash production, perfect for both professional and home grilling.",
+      process: [
+        "bricketBBQStep1",
+        "bricketBBQStep2",
+        "bricketBBQStep3",
+        "bricketBBQStep4",
+        "bricketBBQStep5",
+      ],
+    },
+    {
       id: 4,
       nameKey: "woodPellet",
       image: "images/woodPellet.webp",

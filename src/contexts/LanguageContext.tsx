@@ -130,6 +130,9 @@ const translations = {
     bricket: "Bricket",
     bricketDesc:
       "Compressed charcoal briquettes made from a blend of premium charcoal and natural binders. Our briquettes offer consistent heat output and are perfect for grilling and industrial applications.",
+    bricketBBQ: "Bricket BBQ",
+    bricketBBQDesc:
+      "Premium BBQ briquettes specially designed for grilling and smoking. Our BBQ briquettes provide long-lasting heat, consistent temperature, and minimal ash production, perfect for both professional and home grilling.",
     woodPellet: "Wood Pellet",
     woodPelletDesc:
       "Premium wood pellets made from compressed sawdust and wood waste. Our pellets are designed for high efficiency and low emissions, making them ideal for heating systems and industrial use.",
@@ -158,6 +161,12 @@ const translations = {
     bricketStep3: "Drying process",
     bricketStep4: "Quality testing",
     bricketStep5: "Packaging and distribution",
+
+    bricketBBQStep1: "Selection of premium charcoal and natural binders",
+    bricketBBQStep2: "Specialized mixing process for BBQ formulation",
+    bricketBBQStep3: "High-pressure compression into uniform shapes",
+    bricketBBQStep4: "Quality testing for heat output and burn time",
+    bricketBBQStep5: "Packaging in moisture-resistant containers",
 
     woodPelletStep1: "Collection and preparation of raw materials",
     woodPelletStep2: "Grinding and drying",
@@ -357,6 +366,9 @@ const translations = {
     bricket: "Briket",
     bricketDesc:
       "Briket arang terkompresi yang terbuat dari campuran arang premium dan pengikat alami. Briket kami menawarkan output panas yang konsisten dan sempurna untuk pemanggangan dan aplikasi industri.",
+    bricketBBQ: "Briket BBQ",
+    bricketBBQDesc:
+      "Briket BBQ premium yang dirancang khusus untuk pemanggangan dan pengasapan. Briket BBQ kami memberikan panas yang tahan lama, suhu yang konsisten, dan produksi abu minimal, sempurna untuk pemanggangan profesional dan rumahan.",
     woodPellet: "Pelet Kayu",
     woodPelletDesc:
       "Pelet kayu premium yang terbuat dari serbuk kayu dan limbah kayu terkompresi. Pelet kami dirancang untuk efisiensi tinggi dan emisi rendah, menjadikannya ideal untuk sistem pemanas dan penggunaan industri.",
@@ -381,27 +393,33 @@ const translations = {
     sawdustStep5: "Pengemasan dalam berbagai ukuran",
 
     bricketStep1: "Pencampuran bubuk arang dengan pengikat alami",
-    bricketStep2: "Kompresi menjadi bentuk seragam",
+    bricketStep2: "Pemampatan menjadi bentuk yang seragam",
     bricketStep3: "Proses pengeringan",
     bricketStep4: "Pengujian kualitas",
     bricketStep5: "Pengemasan dan distribusi",
 
+    bricketBBQStep1: "Pemilihan arang premium dan pengikat alami",
+    bricketBBQStep2: "Proses pencampuran khusus untuk formula BBQ",
+    bricketBBQStep3: "Pemampatan tekanan tinggi menjadi bentuk seragam",
+    bricketBBQStep4: "Pengujian kualitas untuk panas dan lama bakar",
+    bricketBBQStep5: "Pengemasan dalam wadah tahan lembap",
+
     woodPelletStep1: "Pengumpulan dan persiapan bahan baku",
     woodPelletStep2: "Penggilingan dan pengeringan",
-    woodPelletStep3: "Kompresi menjadi bentuk pelet",
+    woodPelletStep3: "Pemampatan menjadi bentuk pelet",
     woodPelletStep4: "Pendinginan dan penyaringan",
     woodPelletStep5: "Kontrol kualitas dan pengemasan",
 
     woodChipStep1: "Pemilihan bahan kayu yang sesuai",
-    woodChipStep2: "Pemotongan ke ukuran yang ditentukan",
+    woodChipStep2: "Pemotongan sesuai ukuran yang ditentukan",
     woodChipStep3: "Penyaringan untuk konsistensi",
-    woodChipStep4: "Pengeringan ke kadar air optimal",
+    woodChipStep4: "Pengeringan hingga kadar air optimal",
     woodChipStep5: "Kontrol kualitas dan pengemasan",
 
-    fireWoodStep1: "Pemilihan spesies kayu keras premium",
-    fireWoodStep2: "Proses pengeringan dan penuaan yang tepat",
+    fireWoodStep1: "Pemilihan jenis kayu keras premium",
+    fireWoodStep2: "Proses pengeringan dan pematangan yang tepat",
     fireWoodStep3: "Pemotongan ke ukuran standar",
-    fireWoodStep4: "Pemeriksaan kualitas untuk kadar air",
+    fireWoodStep4: "Inspeksi kualitas untuk kadar kelembapan",
     fireWoodStep5: "Pengemasan dan distribusi",
     fireWoodStep6: "Tersedia untuk semua jenis kayu",
 
@@ -581,6 +599,9 @@ const translations = {
     bricket: "الفحم المضغوط",
     bricketDesc:
       "فحم مضغوط مصنوع من مزيج من الفحم الفاخر والمواد الرابطة الطبيعية. يوفر الفحم المضغوط لدينا حرارة ثابتة ومثالي للشواء والتطبيقات الصناعية.",
+    bricketBBQ: "فحم الشواء المضغوط",
+    bricketBBQDesc:
+      "فحم شواء مضغوط فاخر مصمم خصيصًا للشواء والتدخين. يوفر فحم الشواء المضغوط لدينا حرارة طويلة الأمد، ودرجة حرارة ثابتة، وإنتاج رماد minimal، مثالي للشواء الاحترافي والمنزلي.",
     woodPellet: "حبيبات الخشب",
     woodPelletDesc:
       "حبيبات خشب فاخرة مصنوعة من نشارة الخشب وفضلات الخشب المضغوطة. تم تصميم حبيباتنا للكفاءة العالية والانبعاثات المنخفضة، مما يجعلها مثالية لأنظمة التدفئة والاستخدام الصناعي.",
@@ -607,8 +628,14 @@ const translations = {
     bricketStep1: "خلط مسحوق الفحم مع المواد الرابطة الطبيعية",
     bricketStep2: "الضغط إلى أشكال موحدة",
     bricketStep3: "عملية التجفيف",
-    bricketStep4: "اختبار مراقبة الجودة",
+    bricketStep4: "اختبار الجودة",
     bricketStep5: "التعبئة والتوزيع",
+
+    bricketBBQStep1: "اختيار الفحم الفاخر والمواد الرابطة الطبيعية",
+    bricketBBQStep2: "عملية خلط متخصصة لتركيبة الشواء",
+    bricketBBQStep3: "ضغط عالي الضغط إلى أشكال موحدة",
+    bricketBBQStep4: "اختبار الجودة لإنتاج الحرارة ووقت الاحتراق",
+    bricketBBQStep5: "التعبئة في حاويات مقاومة للرطوبة",
 
     woodPelletStep1: "جمع وتحضير المواد الخام",
     woodPelletStep2: "الطحن والتجفيف",
@@ -794,6 +821,9 @@ const translations = {
     bricket: "木炭块",
     bricketDesc:
       "由优质木炭和天然粘合剂制成的压缩木炭块。我们的木炭块提供稳定的热量输出，非常适合烧烤和工业应用。",
+    bricketBBQ: "木炭块 BBQ",
+    bricketBBQDesc:
+      "木炭块 BBQ 专门为烧烤和烟熏而设计。我们的 BBQ 木炭块提供持久的热量、一致的温度和最小的灰分生产，非常适合专业和家庭烧烤。",
     woodPellet: "木颗粒",
     woodPelletDesc:
       "由压缩木屑和木材废料制成的优质木颗粒。我们的颗粒设计用于高效率低排放，非常适合供暖系统和工业用途。",
@@ -815,13 +845,19 @@ const translations = {
     sawdustStep2: "筛选和过滤以确保一致性",
     sawdustStep3: "干燥至最佳水分含量",
     sawdustStep4: "质量测试和分级",
-    sawdustStep5: "Packaging in various sizes",
+    sawdustStep5: "各种尺寸包装",
 
     bricketStep1: "将木炭粉与天然粘合剂混合",
     bricketStep2: "压缩成统一形状",
     bricketStep3: "干燥过程",
     bricketStep4: "质量测试",
     bricketStep5: "包装和分销",
+
+    bricketBBQStep1: "选择优质木炭和天然粘合剂",
+    bricketBBQStep2: "专门的烧烤配方混合工艺",
+    bricketBBQStep3: "高压压缩成统一形状",
+    bricketBBQStep4: "热量输出和燃烧时间质量测试",
+    bricketBBQStep5: "防潮容器包装",
 
     woodPelletStep1: "收集和准备原材料",
     woodPelletStep2: "研磨和干燥",

@@ -56,6 +56,19 @@ const products: Product[] = [
   },
   {
     id: 4,
+    nameKey: "bricketBBQ",
+    descKey: "bricketBBQDesc",
+    image: "images/bricketBBQ.jpg",
+    process: [
+      "bricketBBQStep1",
+      "bricketBBQStep2",
+      "bricketBBQStep3",
+      "bricketBBQStep4",
+      "bricketBBQStep5",
+    ],
+  },
+  {
+    id: 5,
     nameKey: "woodPellet",
     descKey: "woodPelletDesc",
     image: "images/woodChipReal.jpg",
@@ -68,7 +81,7 @@ const products: Product[] = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     nameKey: "woodChip",
     descKey: "woodChipDesc",
     image: "images/woodChip.webp",
@@ -81,7 +94,7 @@ const products: Product[] = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     nameKey: "fireWood",
     descKey: "fireWoodDesc",
     image: "images/firewood.jpg",
