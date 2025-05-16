@@ -394,8 +394,8 @@ const translations = {
 
     bricketStep1: "Pencampuran bubuk arang dengan pengikat alami",
     bricketStep2: "Pemampatan menjadi bentuk yang seragam",
-    bricketStep3: "Proses pengeringan",
-    bricketStep4: "Pengujian kualitas",
+    bricketStep3: "Drying process",
+    bricketStep4: "Quality testing",
     bricketStep5: "Pengemasan dan distribusi",
 
     bricketBBQStep1: "Pemilihan arang premium dan pengikat alami",
@@ -821,9 +821,9 @@ const translations = {
     bricket: "木炭块",
     bricketDesc:
       "由优质木炭和天然粘合剂制成的压缩木炭块。我们的木炭块提供稳定的热量输出，非常适合烧烤和工业应用。",
-    bricketBBQ: "木炭块 BBQ",
+    bricketBBQ: "烧烤木炭块",
     bricketBBQDesc:
-      "木炭块 BBQ 专门为烧烤和烟熏而设计。我们的 BBQ 木炭块提供持久的热量、一致的温度和最小的灰分生产，非常适合专业和家庭烧烤。",
+      "烧烤木炭块专门为烧烤和烟熏而设计。我们的烧烤木炭块提供持久的热量、一致的温度和最小的灰分生产，非常适合专业和家庭烧烤。",
     woodPellet: "木颗粒",
     woodPelletDesc:
       "由压缩木屑和木材废料制成的优质木颗粒。我们的颗粒设计用于高效率低排放，非常适合供暖系统和工业用途。",
