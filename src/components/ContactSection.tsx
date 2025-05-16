@@ -1,15 +1,113 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { submitContactForm } from "@/lib/sheetbest";
 
 const ContactSection = () => {
   const { t } = useLanguage();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: "success" | "error" | null;
+    message: string;
+  }>({ type: null, message: "" });
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  // Create a hidden form for FormSubmit.co
+  const hiddenFormRef = useRef<HTMLFormElement>(null);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: "" });
+
+    try {
+      // 1. Send to SheetBest
+      await submitContactForm(formData);
+
+      // 2. Send to FormSubmit.co using hidden form
+      if (hiddenFormRef.current) {
+        // Update hidden form values
+        const hiddenForm = hiddenFormRef.current;
+        const nameInput = hiddenForm.querySelector(
+          'input[name="name"]'
+        ) as HTMLInputElement;
+        const emailInput = hiddenForm.querySelector(
+          'input[name="email"]'
+        ) as HTMLInputElement;
+        const messageInput = hiddenForm.querySelector(
+          'textarea[name="message"]'
+        ) as HTMLTextAreaElement;
+
+        if (nameInput && emailInput && messageInput) {
+          nameInput.value = formData.name;
+          emailInput.value = formData.email;
+          messageInput.value = formData.message;
+
+          // Submit the hidden form
+          hiddenForm.submit();
+        }
+      }
+
+      // If we reach here, it means the data was sent successfully
+      setSubmitStatus({
+        type: "success",
+        message: t("contactSuccessMessage"),
+      });
+
+      // Reset form data
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("Contact form submission error:", error);
+      setSubmitStatus({
+        type: "error",
+        message: t("contactErrorMessage"),
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <section className="py-20 md:px-10 bg-white relative overflow-hidden">
+      {/* Hidden form for FormSubmit.co */}
+      <form
+        ref={hiddenFormRef}
+        action="https://formsubmit.co/0dbe0d5acdc5e5eb7992de7910abc975"
+        method="POST"
+        className="hidden"
+      >
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <textarea name="message"></textarea>
+        {/* Optional: Add honeypot to prevent spam */}
+        <input type="text" name="_honey" style={{ display: "none" }} />
+        {/* Optional: Disable captcha */}
+        <input type="hidden" name="_captcha" value="false" />
+        {/* Optional: Custom success page */}
+        <input type="hidden" name="_next" value={window.location.href} />
+      </form>
+
       {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-gani-cream/50 to-white"></div>
       <div className="absolute top-40 right-20 w-32 h-32 rounded-full border-2 border-dashed border-gani-green/20 animate-gentle-float"></div>
@@ -25,38 +123,68 @@ const ContactSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact form */}
           <div className="bg-white py-8 rounded-lg animate-fade-in">
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium mb-2">
-                    {t("firstName")}
-                  </label>
-                  <Input className="rounded-none" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium mb-2">
-                    {t("lastName")}
-                  </label>
-                  <Input className="rounded-none" />
-                </div>
+            <form className="space-y-6" onSubmit={handleSubmit}>
+              <div>
+                <label className="block text-sm font-medium mb-2">
+                  {t("name")}
+                </label>
+                <Input
+                  className="rounded-none"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
               </div>
 
               <div>
                 <label className="block text-sm font-medium mb-2">
                   {t("email")}
                 </label>
-                <Input type="email" className="rounded-none" />
+                <Input
+                  type="email"
+                  className="rounded-none"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
               </div>
 
               <div>
                 <label className="block text-sm font-medium mb-2">
                   {t("message")}
                 </label>
-                <Textarea className="rounded-none min-h-[150px]" />
+                <Textarea
+                  className="rounded-none min-h-[150px]"
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                />
               </div>
 
-              <Button className="w-full bg-gani-green hover:bg-gani-green-dark text-white rounded-none">
-                {t("sendMessage")}
+              {submitStatus.type && (
+                <div
+                  className={`p-4 rounded ${
+                    submitStatus.type === "success"
+                      ? "bg-green-50 text-green-700"
+                      : "bg-red-50 text-red-700"
+                  }`}
+                >
+                  {submitStatus.message}
+                </div>
+              )}
+
+              <Button
+                type="submit"
+                className="w-full bg-gani-green hover:bg-gani-green-dark text-white rounded-none"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? t("sending") : t("sendMessage")}
               </Button>
             </form>
           </div>

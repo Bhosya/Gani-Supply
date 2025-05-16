@@ -1,10 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { submitNewsletterSubscription } from "@/lib/sheetbest";
 
 const Newsletter = () => {
   const { t } = useLanguage();
+  const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: "success" | "error" | null;
+    message: string;
+  }>({ type: null, message: "" });
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: "" });
+
+    try {
+      await submitNewsletterSubscription(email);
+      setSubmitStatus({
+        type: "success",
+        message: t("newsletterSuccessMessage"),
+      });
+      setEmail("");
+    } catch (error) {
+      setSubmitStatus({
+        type: "error",
+        message: t("newsletterErrorMessage"),
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <section className="py-16 bg-gani-green text-white relative overflow-hidden">
@@ -20,15 +49,38 @@ const Newsletter = () => {
             {t("communityDescription")}
           </p>
 
-          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-2 max-w-md mx-auto">
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-2 max-w-md mx-auto"
+          >
             <Input
+              type="email"
               placeholder={t("emailPlaceholder")}
               className="flex-1 border-white/30 bg-white/10 placeholder:text-white/50 focus:border-white rounded-none"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
             />
-            <Button className="bg-white text-gani-green hover:bg-white/90 hover:text-gani-green-dark rounded-none">
-              {t("subscribe")}
+            <Button
+              type="submit"
+              className="bg-white text-gani-green hover:bg-white/90 hover:text-gani-green-dark rounded-none"
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? t("subscribing") : t("subscribe")}
             </Button>
-          </div>
+          </form>
+
+          {submitStatus.type && (
+            <div
+              className={`mt-4 p-4 rounded ${
+                submitStatus.type === "success"
+                  ? "bg-white/20 text-white"
+                  : "bg-red-500/20 text-red-200"
+              }`}
+            >
+              {submitStatus.message}
+            </div>
+          )}
 
           <p className="text-xs text-white/60 mt-4">{t("privacyConsent")}</p>
         </div>

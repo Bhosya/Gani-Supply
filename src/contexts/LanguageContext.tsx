@@ -54,7 +54,7 @@ const translations = {
     // Contact Section
     contactUs: "Contact Us",
     contactDescription:
-      "We'd love to hear from you. Get in touch with any questions, inquiries, or to schedule a visit to our store.",
+      "We'd love to hear from you. Get in touch with any questions, inquiries, or to schedule a visit to our warehouse.",
 
     // Newsletter
     joinNewsletter: "Join Our Newsletter",
@@ -91,18 +91,27 @@ const translations = {
     viewAllImages: "View All Images",
     galleryWoodCollection: "Wood Collection",
     galleryCharcoalProducts: "Charcoal Products",
-    gallerySortingProcess: "Sorting Process",
+    gallerySortingProcess: "Loading Process",
+    galleryStuffingProcess: "Stuffing Process",
     galleryCategoryWood: "Wood",
     galleryCategoryCharcoal: "Charcoal",
     galleryCategoryIndustrial: "Industrial",
 
     // Contact Section
     getInTouch: "Get In Touch",
-    firstName: "First Name",
-    lastName: "Last Name",
+    name: "Name",
     email: "Email",
     message: "Message",
     sendMessage: "Send Message",
+    sending: "Sending...",
+    contactSuccessMessage:
+      "Thank you for your message. We'll get back to you soon!",
+    contactErrorMessage:
+      "Sorry, there was an error sending your message. Please try again.",
+    newsletterSuccessMessage: "Thank you for subscribing to our newsletter!",
+    newsletterErrorMessage:
+      "Sorry, there was an error subscribing to the newsletter. Please try again.",
+    subscribing: "Subscribing...",
     visitStore: "Visit Our Store",
     storeName: "Gani Supply",
     storeHours: "Store Hours",
@@ -144,10 +153,10 @@ const translations = {
     sawdustStep4: "Quality testing and grading",
     sawdustStep5: "Packaging in various sizes",
 
-    bricketStep1: "Mixing of charcoal powder with natural binders",
+    bricketStep1: "Mixing charcoal powder with natural binders",
     bricketStep2: "Compression into uniform shapes",
     bricketStep3: "Drying process",
-    bricketStep4: "Quality control testing",
+    bricketStep4: "Quality testing",
     bricketStep5: "Packaging and distribution",
 
     woodPelletStep1: "Collection and preparation of raw materials",
@@ -157,7 +166,7 @@ const translations = {
     woodPelletStep5: "Quality control and packaging",
 
     woodChipStep1: "Selection of suitable wood materials",
-    woodChipStep2: "Chipping to specified sizes",
+    woodChipStep2: "Cutting to specified sizes",
     woodChipStep3: "Screening for consistency",
     woodChipStep4: "Drying to optimal moisture content",
     woodChipStep5: "Quality control and packaging",
@@ -167,6 +176,7 @@ const translations = {
     fireWoodStep3: "Cutting to standardized sizes",
     fireWoodStep4: "Quality inspection for moisture content",
     fireWoodStep5: "Packaging and distribution",
+    fireWoodStep6: "Available for all types of wood",
 
     // About Page
     companyProfile: "Company Profile",
@@ -270,7 +280,7 @@ const translations = {
     // Contact Section
     contactUs: "Hubungi Kami",
     contactDescription:
-      "Kami ingin mendengar dari Anda. Hubungi kami untuk pertanyaan, permintaan, atau untuk menjadwalkan kunjungan ke toko kami.",
+      "Kami ingin mendengar dari Anda. Hubungi kami untuk pertanyaan, permintaan, atau untuk menjadwalkan kunjungan ke gudang kami.",
 
     // Newsletter
     joinNewsletter: "Bergabung dengan Newsletter Kami",
@@ -307,18 +317,28 @@ const translations = {
     viewAllImages: "Lihat Semua Gambar",
     galleryWoodCollection: "Koleksi Kayu",
     galleryCharcoalProducts: "Produk Arang",
-    gallerySortingProcess: "Proses Pengurutan",
+    gallerySortingProcess: "Proses Pemuatan",
+    galleryStuffingProcess: "Proses Pengisian",
     galleryCategoryWood: "Kayu",
     galleryCategoryCharcoal: "Arang",
     galleryCategoryIndustrial: "Industri",
 
     // Contact Section
     getInTouch: "Hubungi Kami",
-    firstName: "Nama Depan",
-    lastName: "Nama Belakang",
+    name: "Nama",
     email: "Email",
     message: "Pesan",
     sendMessage: "Kirim Pesan",
+    sending: "Mengirim...",
+    contactSuccessMessage:
+      "Terima kasih atas pesan Anda. Kami akan segera menghubungi Anda!",
+    contactErrorMessage:
+      "Maaf, terjadi kesalahan saat mengirim pesan Anda. Silakan coba lagi.",
+    newsletterSuccessMessage:
+      "Terima kasih telah berlangganan newsletter kami!",
+    newsletterErrorMessage:
+      "Maaf, terjadi kesalahan saat berlangganan newsletter. Silakan coba lagi.",
+    subscribing: "Berlangganan...",
     visitStore: "Kunjungi Toko Kami",
     storeName: "Gani Supply",
     storeHours: "Jam Operasional",
@@ -383,6 +403,7 @@ const translations = {
     fireWoodStep3: "Pemotongan ke ukuran standar",
     fireWoodStep4: "Pemeriksaan kualitas untuk kadar air",
     fireWoodStep5: "Pengemasan dan distribusi",
+    fireWoodStep6: "Tersedia untuk semua jenis kayu",
 
     // About Page
     companyProfile: "Profil Perusahaan",
@@ -485,7 +506,7 @@ const translations = {
     // Contact Section
     contactUs: "اتصل بنا",
     contactDescription:
-      "نود أن نسمع منك. تواصل معنا لأي أسئلة أو استفسارات أو لجدولة زيارة لمتجرنا.",
+      "نود أن نسمع منك. تواصل معنا لأي أسئلة أو استفسارات أو لجدولة زيارة لمستودعنا.",
 
     // Newsletter
     joinNewsletter: "انضم إلى نشرتنا الإخبارية",
@@ -522,18 +543,26 @@ const translations = {
     viewAllImages: "عرض جميع الصور",
     galleryWoodCollection: "مجموعة الأخشاب",
     galleryCharcoalProducts: "منتجات الفحم",
-    gallerySortingProcess: "عملية الفرز",
+    gallerySortingProcess: "عملية التحميل",
+    galleryStuffingProcess: "عملية التعبئة",
     galleryCategoryWood: "الخشب",
     galleryCategoryCharcoal: "الفحم",
     galleryCategoryIndustrial: "صناعي",
 
     // Contact Section
     getInTouch: "تواصل معنا",
-    firstName: "الاسم الأول",
-    lastName: "اسم العائلة",
+    name: "الاسم",
     email: "البريد الإلكتروني",
     message: "الرسالة",
     sendMessage: "إرسال الرسالة",
+    sending: "جاري الإرسال...",
+    contactSuccessMessage: "شكراً على رسالتك. سنتواصل معك قريباً!",
+    contactErrorMessage:
+      "عذراً، حدث خطأ أثناء إرسال رسالتك. يرجى المحاولة مرة أخرى.",
+    newsletterSuccessMessage: "شكراً لاشتراكك في نشرتنا الإخبارية!",
+    newsletterErrorMessage:
+      "عذراً، حدث خطأ أثناء الاشتراك في النشرة الإخبارية. يرجى المحاولة مرة أخرى.",
+    subscribing: "جاري الاشتراك...",
     visitStore: "زيارة متجرنا",
     storeName: "Gani Supply",
     storeHours: "ساعات العمل",
@@ -598,6 +627,7 @@ const translations = {
     fireWoodStep3: "التقطيع إلى أحجام قياسية",
     fireWoodStep4: "فحص الجودة لمحتوى الرطوبة",
     fireWoodStep5: "التعبئة والتوزيع",
+    fireWoodStep6: "متوفر لجميع أنواع الأخشاب",
 
     // About Page
     companyProfile: "الملف التعريفي للشركة",
@@ -694,7 +724,7 @@ const translations = {
     // Contact Section
     contactUs: "联系我们",
     contactDescription:
-      "我们期待听到您的声音。如有任何问题、咨询或预约参观我们的商店，请随时联系我们。",
+      "我们期待听到您的声音。如有任何问题、咨询或预约参观我们的仓库，请随时联系我们。",
 
     // Newsletter
     joinNewsletter: "加入我们的通讯",
@@ -728,18 +758,24 @@ const translations = {
     viewAllImages: "查看所有图片",
     galleryWoodCollection: "木材系列",
     galleryCharcoalProducts: "木炭产品",
-    gallerySortingProcess: "分选工艺",
+    gallerySortingProcess: "装载工艺",
+    galleryStuffingProcess: "填充工艺",
     galleryCategoryWood: "木材",
     galleryCategoryCharcoal: "木炭",
     galleryCategoryIndustrial: "工业",
 
     // Contact Section
     getInTouch: "联系我们",
-    firstName: "名字",
-    lastName: "姓氏",
+    name: "姓名",
     email: "电子邮件",
     message: "留言",
     sendMessage: "发送消息",
+    sending: "发送中...",
+    contactSuccessMessage: "感谢您的留言。我们会尽快回复您！",
+    contactErrorMessage: "抱歉，发送消息时出现错误。请重试。",
+    newsletterSuccessMessage: "感谢订阅我们的通讯！",
+    newsletterErrorMessage: "抱歉，订阅通讯时出现错误。请重试。",
+    subscribing: "订阅中...",
     visitStore: "访问我们的商店",
     storeName: "Gani Supply",
     storeHours: "营业时间",
@@ -779,12 +815,12 @@ const translations = {
     sawdustStep2: "筛选和过滤以确保一致性",
     sawdustStep3: "干燥至最佳水分含量",
     sawdustStep4: "质量测试和分级",
-    sawdustStep5: "各种尺寸的包装",
+    sawdustStep5: "Packaging in various sizes",
 
     bricketStep1: "将木炭粉与天然粘合剂混合",
     bricketStep2: "压缩成统一形状",
     bricketStep3: "干燥过程",
-    bricketStep4: "质量控制测试",
+    bricketStep4: "质量测试",
     bricketStep5: "包装和分销",
 
     woodPelletStep1: "收集和准备原材料",
@@ -804,6 +840,7 @@ const translations = {
     fireWoodStep3: "切割至标准尺寸",
     fireWoodStep4: "水分含量质量检查",
     fireWoodStep5: "包装和分销",
+    fireWoodStep6: "适用于所有类型的木材",
 
     // About Page
     companyProfile: "公司简介",

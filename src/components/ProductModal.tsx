@@ -26,10 +26,11 @@ const ProductModal = ({ isOpen, onClose, product }: ProductModalProps) => {
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl p-0">
+      <DialogContent className="max-w-4xl p-0 max-h-[100vh] overflow-y-auto">
         <Button
           variant="ghost"
-          className="absolute right-4 top-4"
+          size="icon"
+          className="absolute right-4 top-4 z-50 h-8 w-8 rounded-full bg-black/50 text-white hover:bg-black/70 hover:text-white"
           onClick={onClose}
         >
           <X className="h-4 w-4" />
@@ -40,7 +41,7 @@ const ProductModal = ({ isOpen, onClose, product }: ProductModalProps) => {
             <img
               src={product.image}
               alt={t(product.nameKey)}
-              className="w-full h-full object-cover"
+              className="w-full h-full max-h-[500px] object-cover"
             />
           </div>
 

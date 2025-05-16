@@ -53,7 +53,7 @@ const Gallery = () => {
     },
     {
       id: 6,
-      titleKey: "gallerySortingProcess",
+      titleKey: "galleryStuffingProcess",
       image: "images/itemInContainer.jpg",
       categoryKey: "galleryCategoryIndustrial",
     },

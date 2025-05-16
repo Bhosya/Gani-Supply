@@ -19,7 +19,7 @@ const products: Product[] = [
     id: 1,
     nameKey: "hardwoodCharcoal",
     descKey: "hardwoodCharcoalDesc",
-    image: "images/hardwoordCharcoal.jpeg",
+    image: "images/grayCharcoal.jpg",
     process: [
       "hardwoodCharcoalStep1",
       "hardwoodCharcoalStep2",
@@ -87,6 +87,7 @@ const products: Product[] = [
     image: "images/firewood.jpg",
     process: [
       "fireWoodStep1",
+      "fireWoodStep6",
       "fireWoodStep2",
       "fireWoodStep3",
       "fireWoodStep4",

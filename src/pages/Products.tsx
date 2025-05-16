@@ -21,7 +21,7 @@ const Products = () => {
     {
       id: 1,
       nameKey: "hardwoodCharcoal",
-      image: "images/hardwoordCharcoal.jpeg",
+      image: "images/grayCharcoal.jpg",
       description:
         "Premium hardwood charcoal made from sustainably sourced timber. Our hardwood charcoal is known for its long burning time, high heat output, and minimal smoke production. Perfect for both commercial and residential use.",
       process: [
@@ -96,6 +96,7 @@ const Products = () => {
         "Premium firewood sourced from sustainable forests. Our firewood is carefully selected, properly seasoned, and cut to optimal sizes for efficient burning. Perfect for fireplaces, outdoor fire pits, and industrial heating applications.",
       process: [
         "fireWoodStep1",
+        "fireWoodStep6",
         "fireWoodStep2",
         "fireWoodStep3",
         "fireWoodStep4",

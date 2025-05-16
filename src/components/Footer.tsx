@@ -1,12 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Instagram, Facebook, Twitter, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { submitNewsletterSubscription } from "@/lib/sheetbest";
 
 const Footer = () => {
   const { t } = useLanguage();
+  const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: "success" | "error" | null;
+    message: string;
+  }>({ type: null, message: "" });
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: "" });
+
+    try {
+      await submitNewsletterSubscription(email);
+      setSubmitStatus({
+        type: "success",
+        message: t("newsletterSuccessMessage"),
+      });
+      setEmail("");
+    } catch (error) {
+      setSubmitStatus({
+        type: "error",
+        message: t("newsletterErrorMessage"),
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <footer className="bg-gani-dark text-white pt-16 pb-8 md:px-10">
@@ -97,15 +126,36 @@ const Footer = () => {
               {t("joinNewsletter")}
             </h4>
             <p className="text-white/70 mb-4">{t("newsletterDescription")}</p>
-            <div className="flex space-x-2">
-              <Input
-                placeholder={t("emailPlaceholder")}
-                className="bg-white/10 border-white/20 placeholder:text-white/50 rounded-none"
-              />
-              <Button className="bg-gani-green hover:bg-gani-green-dark text-white rounded-none">
-                {t("subscribe")}
-              </Button>
-            </div>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="flex space-x-2">
+                <Input
+                  type="email"
+                  placeholder={t("emailPlaceholder")}
+                  className="bg-white/10 border-white/20 placeholder:text-white/50 rounded-none"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+                <Button
+                  type="submit"
+                  className="bg-gani-green hover:bg-gani-green-dark text-white rounded-none"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? t("subscribing") : t("subscribe")}
+                </Button>
+              </div>
+              {submitStatus.type && (
+                <div
+                  className={`p-2 text-sm rounded ${
+                    submitStatus.type === "success"
+                      ? "bg-green-500/20 text-green-200"
+                      : "bg-red-500/20 text-red-200"
+                  }`}
+                >
+                  {submitStatus.message}
+                </div>
+              )}
+            </form>
           </div>
         </div>
 
