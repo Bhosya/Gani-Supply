@@ -2,18 +2,21 @@ import React from "react";
 import { Dialog, DialogContent, DialogHeader } from "@/components/ui/dialog";
 import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface ImageModalProps {
   isOpen: boolean;
   onClose: () => void;
   image: {
-    title: string;
+    titleKey: string;
     image: string;
-    category: string;
+    categoryKey: string;
   };
 }
 
 const ImageModal = ({ isOpen, onClose, image }: ImageModalProps) => {
+  const { t } = useLanguage();
+
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-5xl max-h-[90vh] overflow-y-auto p-0">
@@ -31,14 +34,16 @@ const ImageModal = ({ isOpen, onClose, image }: ImageModalProps) => {
         <div className="relative">
           <img
             src={image.image}
-            alt={image.title}
+            alt={t(image.titleKey)}
             className="w-full h-auto object-contain"
           />
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
             <div className="bg-white/80 backdrop-blur-sm px-3 py-1 text-xs font-medium text-gani-dark rounded-full inline-block mb-3">
-              {image.category}
+              {t(image.categoryKey)}
             </div>
-            <h3 className="font-playfair text-2xl text-white">{image.title}</h3>
+            <h3 className="font-playfair text-2xl text-white">
+              {t(image.titleKey)}
+            </h3>
           </div>
         </div>
       </DialogContent>

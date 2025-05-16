@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import PageHero from "@/components/PageHero";
 import { useLanguage } from "@/contexts/LanguageContext";
 import ImageModal from "@/components/ImageModal";
+import { ArrowRight } from "lucide-react";
 
 const Gallery = () => {
   const { t } = useLanguage();
@@ -18,63 +19,61 @@ const Gallery = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Sample gallery images
+  // Sample gallery images with translation keys
   const galleryImages = [
     {
       id: 1,
-      title: "Wood Collection",
-      image:
-        "https://images.unsplash.com/photo-1523575708161-ad0fc2a9b951?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-      category: "Wood",
+      titleKey: "galleryWoodCollection",
+      image: "images/firewood.jpg",
+      categoryKey: "galleryCategoryWood",
     },
     {
       id: 2,
-      title: "Charcoal Products",
-      image:
-        "https://plus.unsplash.com/premium_photo-1676142785766-3ee6721ebc8c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      category: "Charcoal",
+      titleKey: "galleryCharcoalProducts",
+      image: "images/charkol.jpg",
+      categoryKey: "galleryCategoryCharcoal",
     },
     {
       id: 3,
-      title: "Industrial Solutions",
-      image:
-        "https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80",
-      category: "Industrial",
+      titleKey: "gallerySortingProcess",
+      image: "images/truckToContainer.jpg",
+      categoryKey: "galleryCategoryIndustrial",
     },
     {
       id: 4,
-      title: "Premium Wood",
-      image:
-        "https://images.unsplash.com/photo-1517142089942-ba376ce32a2e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
-      category: "Wood",
+      titleKey: "galleryWoodCollection",
+      image: "images/woodChipReal.jpg",
+      categoryKey: "galleryCategoryWood",
     },
     {
       id: 5,
-      title: "Charcoal Production",
-      image:
-        "https://plus.unsplash.com/premium_photo-1677456381939-8cbdf4ed2073?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      category: "Charcoal",
+      titleKey: "galleryCharcoalProducts",
+      image: "https://live.staticflickr.com/65535/51141807548_d297d9c142_b.jpg",
+      categoryKey: "galleryCategoryCharcoal",
     },
     {
       id: 6,
-      title: "Industrial Equipment",
-      image:
-        "https://images.unsplash.com/photo-1507646227500-4d389b0012be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
-      category: "Industrial",
+      titleKey: "gallerySortingProcess",
+      image: "images/itemInContainer.jpg",
+      categoryKey: "galleryCategoryIndustrial",
     },
   ];
 
-  // Categories for filter
+  // Categories for filter with translation keys
   const categories = [
-    "All",
-    ...new Set(galleryImages.map((item) => item.category)),
+    { key: "all", label: "All" },
+    { key: "galleryCategoryWood", label: t("galleryCategoryWood") },
+    { key: "galleryCategoryCharcoal", label: t("galleryCategoryCharcoal") },
+    { key: "galleryCategoryIndustrial", label: t("galleryCategoryIndustrial") },
   ];
 
   // Filter images based on selected category
   const filteredImages =
     selectedCategory === "All"
       ? galleryImages
-      : galleryImages.filter((item) => item.category === selectedCategory);
+      : galleryImages.filter(
+          (item) => t(item.categoryKey) === selectedCategory
+        );
 
   return (
     <div className="min-h-screen">
@@ -82,7 +81,7 @@ const Gallery = () => {
       <PageHero
         title={t("gallery")}
         description={t("galleryDescription")}
-        imageUrl="https://plus.unsplash.com/premium_photo-1683417272601-dbbfed0ed718?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        imageUrl="https://img1.wsimg.com/isteam/ip/6d3cbdaf-fa63-422b-a9f3-4c94912a6ab0/cfdc237a-ddff-4c8a-973f-f4cc9680d4b0.jpg/:/"
       />
 
       <section className="py-7 md:py-16 md:px-10 bg-gani-cream">
@@ -92,18 +91,18 @@ const Gallery = () => {
             <div className="flex gap-4 mb-4 md:mb-12 min-w-max">
               {categories.map((category) => (
                 <Button
-                  key={category}
+                  key={category.key}
                   variant={
-                    selectedCategory === category ? "default" : "outline"
+                    selectedCategory === category.label ? "default" : "outline"
                   }
                   className={`shadow-md ${
-                    selectedCategory === category
+                    selectedCategory === category.label
                       ? "bg-gani-green text-white"
                       : "text-gani-dark hover:bg-gani-green/10"
                   }`}
-                  onClick={() => setSelectedCategory(category)}
+                  onClick={() => setSelectedCategory(category.label)}
                 >
-                  {category}
+                  {category.label}
                 </Button>
               ))}
             </div>
@@ -119,20 +118,36 @@ const Gallery = () => {
               >
                 <img
                   src={item.image}
-                  alt={item.title}
+                  alt={t(item.titleKey)}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-6 w-full">
                   <div className="bg-white/80 backdrop-blur-sm px-3 py-1 text-xs font-medium text-gani-dark rounded-full inline-block mb-3">
-                    {item.category}
+                    {t(item.categoryKey)}
                   </div>
                   <h3 className="font-playfair text-xl text-white">
-                    {item.title}
+                    {t(item.titleKey)}
                   </h3>
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* View More Button */}
+          <div className="mt-12 text-center">
+            <a
+              href="https://drive.google.com/drive/folders/1-DyiWdN4wHOFTibWfquznQhzko7kIm2K"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                size="lg"
+                className="bg-gani-green hover:bg-gani-green-dark text-white rounded-none px-8"
+              >
+                {t("viewAllImages")} <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
           </div>
         </div>
       </section>

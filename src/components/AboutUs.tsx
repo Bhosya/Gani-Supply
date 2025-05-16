@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   const { t } = useLanguage();
@@ -40,9 +41,11 @@ const AboutUs = () => {
             <p className="text-lg text-gani-dark/80 mb-8">
               {t("storyDescription2")}
             </p>
-            <Button className="bg-gani-green hover:bg-gani-green-dark text-white rounded-none px-8">
-              {t("ourPhilosophy")} <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <Link to="/about">
+              <Button className="bg-gani-green hover:bg-gani-green-dark text-white rounded-none px-8">
+                {t("ourPhilosophy")} <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
 
           <div
@@ -52,9 +55,9 @@ const AboutUs = () => {
             <div className="relative">
               <div className="absolute inset-0 border-2 border-gani-green border-dashed rounded-lg transform translate-x-4 translate-y-4"></div>
               <img
-                src="https://media.gettyimages.com/id/1740856436/video/large-lumber-factory-it-is-a-factory-that-produces-shaped-wood-and-is-a-warehouse-store-for.jpg?s=640x640&k=20&c=Gqz6or6v2c__C1goHOs23t7ftJuw02P9iOC7W-z4MHY="
+                src="images/truckToContainer.jpg"
                 alt="Gani Supply studio"
-                className="relative z-10 w-full h-auto object-cover rounded-lg shadow-lg"
+                className="relative z-10 w-full max-h-[450px] object-cover rounded-lg shadow-lg"
               />
             </div>
           </div>
@@ -70,19 +73,21 @@ const AboutUs = () => {
             <div className="hidden md:block absolute top-0 left-0 right-0 h-0.5 bg-gani-green/20 transform translate-y-10"></div>
 
             {/* Milestones */}
-            {["2018", "2020", "2022", "2025"].map((year, index) => (
-              <div
-                key={year}
-                className="flex flex-col items-center mb-10 md:mb-0 relative animate-fade-in"
-                style={{ animationDelay: `${index * 200}ms` }}
-              >
-                <div className="bg-gani-green h-5 w-5 rounded-full z-10 mb-4"></div>
-                <h4 className="font-playfair text-xl mb-2">{year}</h4>
-                <p className="text-center text-sm text-gani-dark/70 max-w-[200px]">
-                  {t(`milestone${index + 1}`)}
-                </p>
-              </div>
-            ))}
+            {["year2010", "year2015", "year2018", "year2023"].map(
+              (year, index) => (
+                <div
+                  key={year}
+                  className="flex flex-col items-center mb-10 md:mb-0 relative animate-fade-in"
+                  style={{ animationDelay: `${index * 200}ms` }}
+                >
+                  <div className="bg-gani-green h-5 w-5 rounded-full z-10 mb-4"></div>
+                  <h4 className="font-playfair text-xl mb-2">{t(year)}</h4>
+                  <p className="text-center text-sm text-gani-dark/70 max-w-[200px]">
+                    {t(`milestone${index + 1}`)}
+                  </p>
+                </div>
+              )
+            )}
           </div>
         </div>
       </div>

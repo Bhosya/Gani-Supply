@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Mail, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const ContactSection = () => {
@@ -68,13 +68,8 @@ const ContactSection = () => {
           >
             <h3 className="font-playfair text-xl mb-6">{t("visitStore")}</h3>
             <div className="space-y-6 flex-grow">
-              <div className="flex items-start">
-                <MapPin className="h-5 w-5 text-gani-green mr-3 mt-1" />
-                <div>
-                  <p className="font-medium">{t("storeName")}</p>
-                  <p className="text-gani-dark/70">{t("storeAddress")}</p>
-                  <p className="text-gani-dark/70">{t("storeCity")}</p>
-                </div>
+              <div>
+                <p className="font-medium">{t("storeName")}</p>
               </div>
 
               <div className="flex items-center">
@@ -90,14 +85,7 @@ const ContactSection = () => {
 
             <div className="pt-6 border-t border-gani-earth/30 mt-6">
               <h4 className="font-medium mb-2">{t("storeHours")}</h4>
-              <div className="grid grid-cols-2 gap-2 text-sm">
-                <p className="text-gani-dark/70">{t("weekdays")}</p>
-                <p>{t("weekdayHours")}</p>
-                <p className="text-gani-dark/70">{t("saturday")}</p>
-                <p>{t("saturdayHours")}</p>
-                <p className="text-gani-dark/70">{t("sunday")}</p>
-                <p>{t("sundayHours")}</p>
-              </div>
+              <p className="text-gani-dark/70">{t("storeHoursDesc")}</p>
             </div>
           </div>
         </div>

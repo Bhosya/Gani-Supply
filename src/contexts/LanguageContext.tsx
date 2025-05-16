@@ -22,7 +22,7 @@ const translations = {
     ourPhilosophy: "Our Philosophy",
     artisticEssentials: "Quality Wood for Everyday & Industrial Use",
     curatedDescription:
-      "Discover our curated range of wood-based products — from premium charcoal to sustainable wood pallets — crafted for performance, durability, and sustainability.",
+      "Our company specializes in sourcing and supplying any products you require from Indonesia, ensuring reliability and competitive pricing",
 
     // Product Section
     viewAllProducts: "View all products",
@@ -42,14 +42,14 @@ const translations = {
     storyDescription2:
       "We believe in the balance between utility and sustainability. That's why our products are not only built to perform but also aligned with environmentally conscious practices. Whether you're a small business or a large-scale manufacturer, we deliver the quality and consistency you can rely on.",
     ourJourney: "Our Journey",
-    milestone1:
-      "Founded in Jakarta with a small collection of handcrafted items.",
-    milestone2:
-      "Expanded to include international artisans and opened our flagship store.",
-    milestone3:
-      "Launched our sustainability initiative and exclusive artisan collaborations.",
-    milestone4:
-      "Looking ahead: Creating a global community of design enthusiasts.",
+    year2010: "2010",
+    year2015: "2015",
+    year2018: "2018",
+    year2023: "2023",
+    milestone1: "Founded with vision to revolutionize wood industry.",
+    milestone2: "Entered global market with premium wood products.",
+    milestone3: "Launched advanced processing facility and technology.",
+    milestone4: "Leading supplier in Southeast Asia's wood industry.",
 
     // Contact Section
     contactUs: "Contact Us",
@@ -87,9 +87,14 @@ const translations = {
 
     // Gallery Section
     galleryDescription:
-      "Explore our collection of high-quality wood products, charcoal, and industrial solutions.",
-    viewAllImages: "View all images",
-    viewDetails: "View Details",
+      "Explore our collection of high-quality products and manufacturing processes",
+    viewAllImages: "View All Images",
+    galleryWoodCollection: "Wood Collection",
+    galleryCharcoalProducts: "Charcoal Products",
+    gallerySortingProcess: "Sorting Process",
+    galleryCategoryWood: "Wood",
+    galleryCategoryCharcoal: "Charcoal",
+    galleryCategoryIndustrial: "Industrial",
 
     // Contact Section
     getInTouch: "Get In Touch",
@@ -99,18 +104,125 @@ const translations = {
     message: "Message",
     sendMessage: "Send Message",
     visitStore: "Visit Our Store",
-    storeName: "Gani Supply Flagship Store",
-    storeAddress: "Jl. Kemang Raya No.123, Jakarta Selatan",
-    storeCity: "Indonesia 12730",
-    storePhone: "+62 21 1234 5678",
-    storeEmail: "hello@ganisupply.com",
+    storeName: "Gani Supply",
     storeHours: "Store Hours",
-    weekdays: "Monday - Friday",
-    weekdayHours: "10:00 - 19:00",
-    saturday: "Saturday",
-    saturdayHours: "11:00 - 18:00",
-    sunday: "Sunday",
-    sundayHours: "Closed",
+    storeHoursDesc:
+      "Our store hours are flexible and can be arranged according to your schedule. Please contact us to schedule your visit.",
+    storePhone: "+62 812 1758 8987",
+    storeEmail: "hello@ganisupply.com",
+
+    // Product Names and Descriptions
+    hardwoodCharcoal: "Hardwood Charcoal",
+    hardwoodCharcoalDesc:
+      "Premium hardwood charcoal made from sustainably sourced timber. Our hardwood charcoal is known for its long burning time, high heat output, and minimal smoke production. Perfect for both commercial and residential use.",
+    sawdust: "Sawdust",
+    sawdustDesc:
+      "High-quality sawdust produced from our wood processing operations. This byproduct is carefully collected and processed to ensure consistency and cleanliness. Ideal for various industrial applications.",
+    bricket: "Bricket",
+    bricketDesc:
+      "Compressed charcoal briquettes made from a blend of premium charcoal and natural binders. Our briquettes offer consistent heat output and are perfect for grilling and industrial applications.",
+    woodPellet: "Wood Pellet",
+    woodPelletDesc:
+      "Premium wood pellets made from compressed sawdust and wood waste. Our pellets are designed for high efficiency and low emissions, making them ideal for heating systems and industrial use.",
+    woodChip: "Wood Chip",
+    woodChipDesc:
+      "High-quality wood chips produced from various wood species. Our wood chips are processed to ensure consistent size and quality, suitable for multiple industrial applications.",
+    fireWood: "Fire Wood",
+    fireWoodDesc:
+      "Premium firewood sourced from sustainable forests. Our firewood is carefully selected, properly seasoned, and cut to optimal sizes for efficient burning. Perfect for fireplaces, outdoor fire pits, and industrial heating applications.",
+
+    // Product Manufacturing Steps
+    hardwoodCharcoalStep1: "Selection of premium hardwood timber",
+    hardwoodCharcoalStep2: "Drying process to reduce moisture content",
+    hardwoodCharcoalStep3: "Carbonization in controlled temperature kilns",
+    hardwoodCharcoalStep4: "Quality control and grading",
+    hardwoodCharcoalStep5: "Packaging and distribution",
+
+    sawdustStep1: "Collection from wood processing operations",
+    sawdustStep2: "Screening and filtering for consistency",
+    sawdustStep3: "Drying to optimal moisture content",
+    sawdustStep4: "Quality testing and grading",
+    sawdustStep5: "Packaging in various sizes",
+
+    bricketStep1: "Mixing of charcoal powder with natural binders",
+    bricketStep2: "Compression into uniform shapes",
+    bricketStep3: "Drying process",
+    bricketStep4: "Quality control testing",
+    bricketStep5: "Packaging and distribution",
+
+    woodPelletStep1: "Collection and preparation of raw materials",
+    woodPelletStep2: "Grinding and drying",
+    woodPelletStep3: "Compression into pellet form",
+    woodPelletStep4: "Cooling and screening",
+    woodPelletStep5: "Quality control and packaging",
+
+    woodChipStep1: "Selection of suitable wood materials",
+    woodChipStep2: "Chipping to specified sizes",
+    woodChipStep3: "Screening for consistency",
+    woodChipStep4: "Drying to optimal moisture content",
+    woodChipStep5: "Quality control and packaging",
+
+    fireWoodStep1: "Selection of premium hardwood species",
+    fireWoodStep2: "Proper seasoning and drying process",
+    fireWoodStep3: "Cutting to standardized sizes",
+    fireWoodStep4: "Quality inspection for moisture content",
+    fireWoodStep5: "Packaging and distribution",
+
+    // About Page
+    companyProfile: "Company Profile",
+    trustedPartner: "Your Trusted Supply Chain Partner",
+    visionMission: "Vision & Mission",
+    vision: "Vision",
+    visionDescription:
+      "To become the most trusted supply chain partner connecting producers and consumers efficiently",
+    mission: "Mission",
+    missionDescription:
+      "To provide the best logistics solutions through modern technology and quality service",
+    ganiSupplyOperations: "Gani Supply Operations",
+    whatWeDo: "What We Do",
+    ourServices: "Our Services",
+    servicesDescription:
+      "Comprehensive supply chain solutions tailored to your needs",
+    supplyChainManagement: "Supply Chain Management",
+    supplyChainDescription:
+      "End-to-end supply chain solutions for optimal efficiency",
+    warehouseManagement: "Warehouse Management",
+    warehouseDescription: "State-of-the-art warehousing solutions",
+    logisticsDistribution: "Logistics & Distribution",
+    logisticsDescription: "Efficient and reliable distribution network",
+    globalStandards: "Global Standards",
+    exportQualityProducts: "Export Quality Products",
+    exportQualityDescription:
+      "Meeting international standards for global markets",
+    internationalStandards: "International Standards",
+    internationalStandardsDescription:
+      "Our products meet and exceed international quality standards, ensuring global market acceptance and customer satisfaction.",
+    qualityControl: "Quality Control",
+    qualityControlDescription:
+      "Rigorous quality control processes ensure that every product meets export standards and maintains consistent excellence.",
+    globalReach: "Global Reach",
+    globalReachDescription:
+      "Our products are trusted by international markets, demonstrating our commitment to global quality standards and customer satisfaction.",
+    certifiedQuality: "Certified Quality",
+    certifiedQualityDescription:
+      "Meeting international standards for global markets",
+    ourPrinciples: "Our Principles",
+    companyValues: "Company Values",
+    companyValuesDescription: "The principles that guide our business",
+    integrity: "Integrity",
+    integrityDescription: "Honest and ethical business practices",
+    innovation: "Innovation",
+    innovationDescription:
+      "Continuous improvement and technological advancement",
+    excellence: "Excellence",
+    excellenceDescription: "Commitment to quality in everything we do",
+    sustainabilityDescription:
+      "Responsible business practices for a better future",
+    readyToPartner: "Ready to Partner With Us?",
+    partnerDescription:
+      "Let's discuss how we can optimize your supply chain and logistics operations",
+    whatsappChatBubble: "How can we help you? 💬",
+    chatOnWhatsApp: "Chat on WhatsApp",
   },
   id: {
     // Navigation
@@ -126,7 +238,7 @@ const translations = {
     artisticEssentials:
       "Produk Kayu Berkualitas untuk Kebutuhan Sehari-hari & Industri",
     curatedDescription:
-      "Temukan berbagai produk berbahan dasar kayu pilihan kami — mulai dari arang premium hingga palet kayu ramah lingkungan — dibuat untuk performa, daya tahan, dan keberlanjutan.",
+      "Perusahaan kami mengkhususkan diri dalam mencari dan memasok produk apa pun yang Anda butuhkan dari Indonesia, menjamin keandalan dan harga yang kompetitif",
 
     // Product Section
     viewAllProducts: "Lihat semua produk",
@@ -146,14 +258,14 @@ const translations = {
     storyDescription2:
       "Kami percaya pada keseimbangan antara utilitas dan keberlanjutan. Itulah mengapa produk kami tidak hanya dibangun untuk berkinerja baik tetapi juga selaras dengan praktik yang sadar lingkungan. Baik Anda adalah bisnis kecil atau produsen skala besar, kami memberikan kualitas dan konsistensi yang dapat Anda andalkan.",
     ourJourney: "Perjalanan Kami",
-    milestone1:
-      "Didirikan di Jakarta dengan koleksi kecil barang-barang kerajinan tangan.",
-    milestone2:
-      "Berkembang untuk mencakup pengrajin internasional dan membuka toko utama kami.",
-    milestone3:
-      "Meluncurkan inisiatif keberlanjutan dan kolaborasi eksklusif dengan pengrajin.",
-    milestone4:
-      "Melihat ke depan: Menciptakan komunitas global penggemar desain.",
+    year2010: "2010",
+    year2015: "2015",
+    year2018: "2018",
+    year2023: "2023",
+    milestone1: "Didirikan dengan visi merevolusi industri kayu.",
+    milestone2: "Masuk pasar global dengan produk kayu premium.",
+    milestone3: "Meluncurkan fasilitas dan teknologi pengolahan canggih.",
+    milestone4: "Pemasok terkemuka industri kayu di Asia Tenggara.",
 
     // Contact Section
     contactUs: "Hubungi Kami",
@@ -191,9 +303,14 @@ const translations = {
 
     // Gallery Section
     galleryDescription:
-      "Jelajahi koleksi produk kayu berkualitas, arang, dan solusi industri kami.",
-    viewAllImages: "Lihat semua gambar",
-    viewDetails: "Lihat Detail",
+      "Jelajahi koleksi produk berkualitas tinggi dan proses manufaktur kami",
+    viewAllImages: "Lihat Semua Gambar",
+    galleryWoodCollection: "Koleksi Kayu",
+    galleryCharcoalProducts: "Produk Arang",
+    gallerySortingProcess: "Proses Pengurutan",
+    galleryCategoryWood: "Kayu",
+    galleryCategoryCharcoal: "Arang",
+    galleryCategoryIndustrial: "Industri",
 
     // Contact Section
     getInTouch: "Hubungi Kami",
@@ -203,18 +320,125 @@ const translations = {
     message: "Pesan",
     sendMessage: "Kirim Pesan",
     visitStore: "Kunjungi Toko Kami",
-    storeName: "Toko Utama Gani Supply",
-    storeAddress: "Jl. Kemang Raya No.123, Jakarta Selatan",
-    storeCity: "Indonesia 12730",
-    storePhone: "+62 21 1234 5678",
-    storeEmail: "hello@ganisupply.com",
+    storeName: "Gani Supply",
     storeHours: "Jam Operasional",
-    weekdays: "Senin - Jumat",
-    weekdayHours: "10:00 - 19:00",
-    saturday: "Sabtu",
-    saturdayHours: "11:00 - 18:00",
-    sunday: "Minggu",
-    sundayHours: "Tutup",
+    storeHoursDesc:
+      "Jam operasional toko kami fleksibel dan dapat diatur sesuai dengan jadwal Anda. Silakan hubungi kami untuk menjadwalkan kunjungan Anda.",
+    storePhone: "+62 812 1758 8987",
+    storeEmail: "hello@ganisupply.com",
+
+    // Product Names and Descriptions
+    hardwoodCharcoal: "Arang Kayu Keras",
+    hardwoodCharcoalDesc:
+      "Arang kayu keras premium yang terbuat dari kayu yang bersumber secara berkelanjutan. Arang kayu keras kami dikenal dengan waktu pembakaran yang lama, output panas yang tinggi, dan produksi asap minimal. Sempurna untuk penggunaan komersial dan residensial.",
+    sawdust: "Serbuk Kayu",
+    sawdustDesc:
+      "Serbuk kayu berkualitas tinggi yang dihasilkan dari operasi pengolahan kayu kami. Produk sampingan ini dikumpulkan dan diproses dengan hati-hati untuk memastikan konsistensi dan kebersihan. Ideal untuk berbagai aplikasi industri.",
+    bricket: "Briket",
+    bricketDesc:
+      "Briket arang terkompresi yang terbuat dari campuran arang premium dan pengikat alami. Briket kami menawarkan output panas yang konsisten dan sempurna untuk pemanggangan dan aplikasi industri.",
+    woodPellet: "Pelet Kayu",
+    woodPelletDesc:
+      "Pelet kayu premium yang terbuat dari serbuk kayu dan limbah kayu terkompresi. Pelet kami dirancang untuk efisiensi tinggi dan emisi rendah, menjadikannya ideal untuk sistem pemanas dan penggunaan industri.",
+    woodChip: "Serpihan Kayu",
+    woodChipDesc:
+      "Serpihan kayu berkualitas tinggi yang diproduksi dari berbagai spesies kayu. Serpihan kayu kami diproses untuk memastikan ukuran dan kualitas yang konsisten, cocok untuk berbagai aplikasi industri.",
+    fireWood: "Kayu Bakar",
+    fireWoodDesc:
+      "Kayu bakar premium yang bersumber dari hutan berkelanjutan. Kayu bakar kami dipilih dengan cermat, dikeringkan dengan baik, dan dipotong ke ukuran optimal untuk pembakaran yang efisien. Perfect for fireplaces, outdoor fire pits, and industrial heating applications.",
+
+    // Product Manufacturing Steps
+    hardwoodCharcoalStep1: "Pemilihan kayu keras berkualitas premium",
+    hardwoodCharcoalStep2: "Proses pengeringan untuk mengurangi kadar air",
+    hardwoodCharcoalStep3: "Karbonisasi dalam tungku suhu terkontrol",
+    hardwoodCharcoalStep4: "Kontrol kualitas dan penggolongan",
+    hardwoodCharcoalStep5: "Pengemasan dan distribusi",
+
+    sawdustStep1: "Pengumpulan dari operasi pengolahan kayu",
+    sawdustStep2: "Penyaringan dan pemfilteran untuk konsistensi",
+    sawdustStep3: "Pengeringan ke kadar air optimal",
+    sawdustStep4: "Pengujian kualitas dan penggolongan",
+    sawdustStep5: "Pengemasan dalam berbagai ukuran",
+
+    bricketStep1: "Pencampuran bubuk arang dengan pengikat alami",
+    bricketStep2: "Kompresi menjadi bentuk seragam",
+    bricketStep3: "Proses pengeringan",
+    bricketStep4: "Pengujian kualitas",
+    bricketStep5: "Pengemasan dan distribusi",
+
+    woodPelletStep1: "Pengumpulan dan persiapan bahan baku",
+    woodPelletStep2: "Penggilingan dan pengeringan",
+    woodPelletStep3: "Kompresi menjadi bentuk pelet",
+    woodPelletStep4: "Pendinginan dan penyaringan",
+    woodPelletStep5: "Kontrol kualitas dan pengemasan",
+
+    woodChipStep1: "Pemilihan bahan kayu yang sesuai",
+    woodChipStep2: "Pemotongan ke ukuran yang ditentukan",
+    woodChipStep3: "Penyaringan untuk konsistensi",
+    woodChipStep4: "Pengeringan ke kadar air optimal",
+    woodChipStep5: "Kontrol kualitas dan pengemasan",
+
+    fireWoodStep1: "Pemilihan spesies kayu keras premium",
+    fireWoodStep2: "Proses pengeringan dan penuaan yang tepat",
+    fireWoodStep3: "Pemotongan ke ukuran standar",
+    fireWoodStep4: "Pemeriksaan kualitas untuk kadar air",
+    fireWoodStep5: "Pengemasan dan distribusi",
+
+    // About Page
+    companyProfile: "Profil Perusahaan",
+    trustedPartner: "Mitra Rantai Pasok Terpercaya Anda",
+    visionMission: "Visi & Misi",
+    vision: "Visi",
+    visionDescription:
+      "Menjadi mitra rantai pasok paling terpercaya yang menghubungkan produsen dan konsumen secara efisien",
+    mission: "Misi",
+    missionDescription:
+      "Memberikan solusi logistik terbaik melalui teknologi modern dan layanan berkualitas",
+    ganiSupplyOperations: "Operasi Gani Supply",
+    whatWeDo: "Apa yang Kami Lakukan",
+    ourServices: "Layanan Kami",
+    servicesDescription:
+      "Solusi rantai pasok komprehensif yang disesuaikan dengan kebutuhan Anda",
+    supplyChainManagement: "Manajemen Rantai Pasok",
+    supplyChainDescription:
+      "Solusi rantai pasok end-to-end untuk efisiensi optimal",
+    warehouseManagement: "Manajemen Gudang",
+    warehouseDescription: "Solusi pergudangan berteknologi canggih",
+    logisticsDistribution: "Logistik & Distribusi",
+    logisticsDescription: "Jaringan distribusi yang efisien dan andal",
+    globalStandards: "Standar Global",
+    exportQualityProducts: "Produk Berkualitas Ekspor",
+    exportQualityDescription:
+      "Memenuhi standar internasional untuk pasar global",
+    internationalStandards: "Standar Internasional",
+    internationalStandardsDescription:
+      "Produk kami memenuhi dan melampaui standar kualitas internasional, memastikan penerimaan pasar global dan kepuasan pelanggan.",
+    qualityControl: "Kontrol Kualitas",
+    qualityControlDescription:
+      "Proses kontrol kualitas yang ketat memastikan setiap produk memenuhi standar ekspor dan mempertahankan keunggulan yang konsisten.",
+    globalReach: "Jangkauan Global",
+    globalReachDescription:
+      "Produk kami dipercaya oleh pasar internasional, menunjukkan komitmen kami terhadap standar kualitas global dan kepuasan pelanggan.",
+    certifiedQuality: "Kualitas Bersertifikat",
+    certifiedQualityDescription:
+      "Memenuhi standar internasional untuk pasar global",
+    ourPrinciples: "Prinsip Kami",
+    companyValues: "Nilai Perusahaan",
+    companyValuesDescription: "Prinsip-prinsip yang memandu bisnis kami",
+    integrity: "Integritas",
+    integrityDescription: "Praktik bisnis yang jujur dan etis",
+    innovation: "Inovasi",
+    innovationDescription: "Peningkatan berkelanjutan dan kemajuan teknologi",
+    excellence: "Keunggulan",
+    excellenceDescription:
+      "Komitmen terhadap kualitas dalam segala hal yang kami lakukan",
+    sustainabilityDescription:
+      "Praktik bisnis yang bertanggung jawab untuk masa depan yang lebih baik",
+    readyToPartner: "Siap Bermitra dengan Kami?",
+    partnerDescription:
+      "Mari diskusikan bagaimana kami dapat mengoptimalkan rantai pasok dan operasi logistik Anda",
+    whatsappChatBubble: "Ada yang bisa kami bantu? 💬",
+    chatOnWhatsApp: "Chat di WhatsApp",
   },
   ar: {
     // Navigation
@@ -229,7 +453,7 @@ const translations = {
     ourPhilosophy: "فلسفتنا",
     artisticEssentials: "خشب عالي الجودة للاستخدام اليومي والصناعي",
     curatedDescription:
-      "اكتشف مجموعتنا المختارة من المنتجات الخشبية — من الفحم الممتاز إلى منصات الخشب المستدامة — مصممة للأداء والمتانة والاستدامة.",
+      "تتخصص شركتنا في توريد وتوفير أي منتجات تحتاجها من إندونيسيا، مع ضمان الموثوقية والأسعار التنافسية",
 
     // Product Section
     viewAllProducts: "عرض جميع المنتجات",
@@ -249,10 +473,14 @@ const translations = {
     storyDescription2:
       "نؤمن بالتوازن بين المنفعة والاستدامة. لهذا السبب، لا يتم بناء منتجاتنا للأداء فحسب، بل تتماشى أيضًا مع الممارسات الواعية بالبيئة. سواء كنت شركة صغيرة أو مصنعًا كبيرًا، نقدم الجودة والاتساق الذي يمكنك الاعتماد عليه.",
     ourJourney: "رحلةنا",
-    milestone1: "تأسست في جاكرتا مع مجموعة صغيرة من العناصر المصنوعة يدويًا.",
-    milestone2: "توسعت لتشمل الحرفيين الدوليين وافتتحت متجرنا الرئيسي.",
-    milestone3: "أطلقت مبادرة الاستدامة والتعاون الحصري مع الحرفيين.",
-    milestone4: "نظرة إلى المستقبل: إنشاء مجتمع عالمي من عشاق التصميم.",
+    year2010: "٢٠١٠",
+    year2015: "٢٠١٥",
+    year2018: "٢٠١٨",
+    year2023: "٢٠٢٣",
+    milestone1: "تأسست برؤية إحداث ثورة في صناعة الأخشاب.",
+    milestone2: "دخول السوق العالمي بمنتجات خشبية فاخرة.",
+    milestone3: "إطلاق منشأة معالجة وتكنولوجيا متطورة.",
+    milestone4: "مورد رائد في صناعة الأخشاب بجنوب شرق آسيا.",
 
     // Contact Section
     contactUs: "اتصل بنا",
@@ -290,9 +518,14 @@ const translations = {
 
     // Gallery Section
     galleryDescription:
-      "استكشف مجموعتنا من منتجات الخشب عالية الجودة والفحم والحلول الصناعية.",
+      "استكشف مجموعتنا من المنتجات عالية الجودة وعمليات التصنيع",
     viewAllImages: "عرض جميع الصور",
-    viewDetails: "عرض التفاصيل",
+    galleryWoodCollection: "مجموعة الأخشاب",
+    galleryCharcoalProducts: "منتجات الفحم",
+    gallerySortingProcess: "عملية الفرز",
+    galleryCategoryWood: "الخشب",
+    galleryCategoryCharcoal: "الفحم",
+    galleryCategoryIndustrial: "صناعي",
 
     // Contact Section
     getInTouch: "تواصل معنا",
@@ -302,18 +535,119 @@ const translations = {
     message: "الرسالة",
     sendMessage: "إرسال الرسالة",
     visitStore: "زيارة متجرنا",
-    storeName: "متجر Gani Supply الرئيسي",
-    storeAddress: "Jl. Kemang Raya No.123, Jakarta Selatan",
-    storeCity: "Indonesia 12730",
-    storePhone: "+62 21 1234 5678",
-    storeEmail: "hello@ganisupply.com",
+    storeName: "Gani Supply",
     storeHours: "ساعات العمل",
-    weekdays: "الاثنين - الجمعة",
-    weekdayHours: "10:00 - 19:00",
-    saturday: "السبت",
-    saturdayHours: "11:00 - 18:00",
-    sunday: "الأحد",
-    sundayHours: "مغلق",
+    storeHoursDesc:
+      "ساعات عمل متجرنا مرنة ويمكن ترتيبها وفقًا لجدولك. يرجى الاتصال بنا لجدولة زيارتك.",
+    storePhone: "+62 812 1758 8987",
+    storeEmail: "hello@ganisupply.com",
+
+    // Product Names and Descriptions
+    hardwoodCharcoal: "فحم الخشب الصلب",
+    hardwoodCharcoalDesc:
+      "فحم خشب صلب فاخر مصنوع من الأخشاب المستدامة. يتميز فحم الخشب الصلب لدينا بوقت احتراق طويل، وإنتاج حرارة عالي، وتدخين minimal. مثالي للاستخدام التجاري والسكني.",
+    sawdust: "نشارة الخشب",
+    sawdustDesc:
+      "نشارة خشب عالية الجودة تنتج من عمليات معالجة الخشب لدينا. يتم جمع هذا المنتج الثانوي ومعالجته بعناية لضمان الاتساق والنظافة. مثالي لمختلف التطبيقات الصناعية.",
+    bricket: "الفحم المضغوط",
+    bricketDesc:
+      "فحم مضغوط مصنوع من مزيج من الفحم الفاخر والمواد الرابطة الطبيعية. يوفر الفحم المضغوط لدينا حرارة ثابتة ومثالي للشواء والتطبيقات الصناعية.",
+    woodPellet: "حبيبات الخشب",
+    woodPelletDesc:
+      "حبيبات خشب فاخرة مصنوعة من نشارة الخشب وفضلات الخشب المضغوطة. تم تصميم حبيباتنا للكفاءة العالية والانبعاثات المنخفضة، مما يجعلها مثالية لأنظمة التدفئة والاستخدام الصناعي.",
+    woodChip: "رقائق الخشب",
+    woodChipDesc:
+      "رقائق خشب عالية الجودة تنتج من أنواع مختلفة من الأخشاب. تتم معالجة رقائق الخشب لدينا لضمان حجم وجودة ثابتة، مناسبة لتطبيقات صناعية متعددة.",
+    fireWood: "حطب",
+    fireWoodDesc:
+      "حطب فاخر مصدر من الغابات المستدامة. يتم اختيار حطبنا بعناية، وتجفيفه بشكل صحيح، وتقطيعه إلى أحجام مثالية للحرق الفعال. مثالي للمدافئ، وحفر النار الخارجية، وتطبيقات التدفئة الصناعية.",
+
+    // Product Manufacturing Steps
+    hardwoodCharcoalStep1: "اختيار الأخشاب الصلبة عالية الجودة",
+    hardwoodCharcoalStep2: "عملية التجفيف لتقليل محتوى الرطوبة",
+    hardwoodCharcoalStep3: "الكربنة في أفران درجة حرارة محكومة",
+    hardwoodCharcoalStep4: "مراقبة الجودة والتصنيف",
+    hardwoodCharcoalStep5: "التعبئة والتوزيع",
+
+    sawdustStep1: "جمع من عمليات معالجة الخشب",
+    sawdustStep2: "الغربلة والتصفية للاتساق",
+    sawdustStep3: "التجفيف إلى محتوى رطوبة مثالي",
+    sawdustStep4: "اختبار الجودة والتصنيف",
+    sawdustStep5: "التعبئة بأحجام مختلفة",
+
+    bricketStep1: "خلط مسحوق الفحم مع المواد الرابطة الطبيعية",
+    bricketStep2: "الضغط إلى أشكال موحدة",
+    bricketStep3: "عملية التجفيف",
+    bricketStep4: "اختبار مراقبة الجودة",
+    bricketStep5: "التعبئة والتوزيع",
+
+    woodPelletStep1: "جمع وتحضير المواد الخام",
+    woodPelletStep2: "الطحن والتجفيف",
+    woodPelletStep3: "الضغط إلى شكل حبيبات",
+    woodPelletStep4: "التبريد والغربلة",
+    woodPelletStep5: "مراقبة الجودة والتعبئة",
+
+    woodChipStep1: "اختيار مواد الخشب المناسبة",
+    woodChipStep2: "التقطيع إلى أحجام محددة",
+    woodChipStep3: "الغربلة للاتساق",
+    woodChipStep4: "التجفيف إلى محتوى رطوبة مثالي",
+    woodChipStep5: "مراقبة الجودة والتعبئة",
+
+    fireWoodStep1: "اختيار أنواع الأخشاب الصلبة عالية الجودة",
+    fireWoodStep2: "عملية التجفيف والتقادم المناسبة",
+    fireWoodStep3: "التقطيع إلى أحجام قياسية",
+    fireWoodStep4: "فحص الجودة لمحتوى الرطوبة",
+    fireWoodStep5: "التعبئة والتوزيع",
+
+    // About Page
+    companyProfile: "الملف التعريفي للشركة",
+    trustedPartner: "شريك سلسلة التوريد الموثوق به",
+    visionMission: "الرؤية والرسالة",
+    vision: "الرؤية",
+    visionDescription:
+      "أن نصبح شريك سلسلة التوريد الأكثر موثوقية الذي يربط المنتجين والمستهلكين بكفاءة",
+    mission: "الرسالة",
+    missionDescription:
+      "توفير أفضل حلول الخدمات اللوجستية من خلال التكنولوجيا الحديثة والخدمة عالية الجودة",
+    ganiSupplyOperations: "عمليات Gani Supply",
+    whatWeDo: "ما نقوم به",
+    ourServices: "خدماتنا",
+    servicesDescription: "حلول سلسلة التوريد الشاملة المصممة حسب احتياجاتك",
+    supplyChainManagement: "إدارة سلسلة التوريد",
+    supplyChainDescription: "حلول سلسلة التوريد المتكاملة للكفاءة المثلى",
+    warehouseManagement: "إدارة المستودعات",
+    warehouseDescription: "حلول مستودعات متطورة",
+    logisticsDistribution: "الخدمات اللوجستية والتوزيع",
+    logisticsDescription: "شبكة توزيع فعالة وموثوقة",
+    globalStandards: "المعايير العالمية",
+    exportQualityProducts: "منتجات بجودة التصدير",
+    exportQualityDescription: "تلبية المعايير الدولية للأسواق العالمية",
+    internationalStandards: "المعايير الدولية",
+    internationalStandardsDescription:
+      "منتجاتنا تلبي وتتجاوز معايير الجودة الدولية، مما يضمن قبول السوق العالمي ورضا العملاء.",
+    qualityControl: "مراقبة الجودة",
+    qualityControlDescription:
+      "عمليات مراقبة الجودة الصارمة تضمن أن كل منتج يلبي معايير التصدير ويحافظ على التميز المستمر.",
+    globalReach: "الوصول العالمي",
+    globalReachDescription:
+      "منتجاتنا موثوقة من قبل الأسواق الدولية، مما يدل على التزامنا بمعايير الجودة العالمية ورضا العملاء.",
+    certifiedQuality: "جودة معتمدة",
+    certifiedQualityDescription: "تلبية المعايير الدولية للأسواق العالمية",
+    ourPrinciples: "مبادئنا",
+    companyValues: "قيم الشركة",
+    companyValuesDescription: "المبادئ التي توجه أعمالنا",
+    integrity: "النزاهة",
+    integrityDescription: "ممارسات أعمال صادقة وأخلاقية",
+    innovation: "الابتكار",
+    innovationDescription: "تحسين مستمر وتقدم تكنولوجي",
+    excellence: "التميز",
+    excellenceDescription: "الالتزام بالجودة في كل ما نقوم به",
+    sustainabilityDescription: "ممارسات أعمال مسؤولة لمستقبل أفضل",
+    readyToPartner: "هل أنت مستعد للشراكة معنا؟",
+    partnerDescription:
+      "دعنا نناقش كيف يمكننا تحسين سلسلة التوريد وعمليات الخدمات اللوجستية الخاصة بك",
+    whatsappChatBubble: "كيف يمكننا مساعدتك؟ 💬",
+    chatOnWhatsApp: "دردشة على واتساب",
   },
   zh: {
     // Navigation
@@ -328,7 +662,7 @@ const translations = {
     ourPhilosophy: "我们的理念",
     artisticEssentials: "高品质木材，满足日常和工业需求",
     curatedDescription:
-      "探索我们精选的木质产品系列 — 从优质木炭到可持续木托盘 — 为性能、耐用性和可持续性而设计。",
+      "我们公司专门从印度尼西亚采购和供应您所需的任何产品，确保可靠性和具有竞争力的价格",
 
     // Product Section
     viewAllProducts: "查看所有产品",
@@ -348,10 +682,14 @@ const translations = {
     storyDescription2:
       "我们相信实用性和可持续性之间的平衡。这就是为什么我们的产品不仅是为了性能而建造，而且还要符合环保意识的做法。无论您是小型企业还是大型制造商，我们都提供您可以信赖的质量和一致性。",
     ourJourney: "我们的历程",
-    milestone1: "在雅加达成立，拥有小型手工制品系列。",
-    milestone2: "扩展至国际工匠并开设旗舰店。",
-    milestone3: "启动可持续发展计划和独家工匠合作。",
-    milestone4: "展望未来：创建全球设计爱好者社区。",
+    year2010: "二零一零年",
+    year2015: "二零一五年",
+    year2018: "二零一八年",
+    year2023: "二零二三年",
+    milestone1: "以革新木材行业的愿景创立。",
+    milestone2: "以优质木材产品进入全球市场。",
+    milestone3: "推出先进加工设施和技术。",
+    milestone4: "成为东南亚木材行业领先供应商。",
 
     // Contact Section
     contactUs: "联系我们",
@@ -372,7 +710,7 @@ const translations = {
     textiles: "纺织品",
     kitchen: "厨房",
     company: "公司",
-    sustainability: "可持续发展",
+    sustainability: "可持续性",
     faq: "常见问题",
     privacyPolicy: "隐私政策",
     termsOfService: "服务条款",
@@ -386,9 +724,14 @@ const translations = {
       "订阅即表示您同意我们的隐私政策并同意接收来自Gani Supply的更新。",
 
     // Gallery Section
-    galleryDescription: "探索我们的高品质木材产品、木炭和工业解决方案系列。",
+    galleryDescription: "探索我们的高质量产品和制造工艺",
     viewAllImages: "查看所有图片",
-    viewDetails: "查看详情",
+    galleryWoodCollection: "木材系列",
+    galleryCharcoalProducts: "木炭产品",
+    gallerySortingProcess: "分选工艺",
+    galleryCategoryWood: "木材",
+    galleryCategoryCharcoal: "木炭",
+    galleryCategoryIndustrial: "工业",
 
     // Contact Section
     getInTouch: "联系我们",
@@ -398,18 +741,116 @@ const translations = {
     message: "留言",
     sendMessage: "发送消息",
     visitStore: "访问我们的商店",
-    storeName: "Gani Supply旗舰店",
-    storeAddress: "Jl. Kemang Raya No.123, Jakarta Selatan",
-    storeCity: "Indonesia 12730",
-    storePhone: "+62 21 1234 5678",
-    storeEmail: "hello@ganisupply.com",
+    storeName: "Gani Supply",
     storeHours: "营业时间",
-    weekdays: "周一至周五",
-    weekdayHours: "10:00 - 19:00",
-    saturday: "周六",
-    saturdayHours: "11:00 - 18:00",
-    sunday: "周日",
-    sundayHours: "休息",
+    storeHoursDesc:
+      "我们的营业时间很灵活，可以根据您的日程安排。请联系我们安排您的访问。",
+    storePhone: "+62 812 1758 8987",
+    storeEmail: "hello@ganisupply.com",
+
+    // Product Names and Descriptions
+    hardwoodCharcoal: "硬木炭",
+    hardwoodCharcoalDesc:
+      "由可持续来源的木材制成的优质硬木炭。我们的硬木炭以其燃烧时间长、热量输出高和烟雾产生少而闻名。非常适合商业和住宅使用。",
+    sawdust: "木屑",
+    sawdustDesc:
+      "从我们的木材加工业务中生产的高质量木屑。这种副产品经过精心收集和处理，以确保一致性和清洁度。适合各种工业应用。",
+    bricket: "木炭块",
+    bricketDesc:
+      "由优质木炭和天然粘合剂制成的压缩木炭块。我们的木炭块提供稳定的热量输出，非常适合烧烤和工业应用。",
+    woodPellet: "木颗粒",
+    woodPelletDesc:
+      "由压缩木屑和木材废料制成的优质木颗粒。我们的颗粒设计用于高效率低排放，非常适合供暖系统和工业用途。",
+    woodChip: "木片",
+    woodChipDesc:
+      "由各种木材生产的高质量木片。我们的木片经过处理以确保尺寸和质量的一致性，适合多种工业应用。",
+    fireWood: "柴火",
+    fireWoodDesc:
+      "来自可持续森林的优质柴火。我们的柴火经过精心挑选，适当干燥，并切割成最佳尺寸以实现高效燃烧。非常适合壁炉、户外火坑和工业加热应用。",
+
+    // Product Manufacturing Steps
+    hardwoodCharcoalStep1: "选择优质硬木",
+    hardwoodCharcoalStep2: "干燥过程以减少水分含量",
+    hardwoodCharcoalStep3: "在控温窑中进行碳化",
+    hardwoodCharcoalStep4: "质量控制和分级",
+    hardwoodCharcoalStep5: "包装和分销",
+
+    sawdustStep1: "从木材加工操作中收集",
+    sawdustStep2: "筛选和过滤以确保一致性",
+    sawdustStep3: "干燥至最佳水分含量",
+    sawdustStep4: "质量测试和分级",
+    sawdustStep5: "各种尺寸的包装",
+
+    bricketStep1: "将木炭粉与天然粘合剂混合",
+    bricketStep2: "压缩成统一形状",
+    bricketStep3: "干燥过程",
+    bricketStep4: "质量控制测试",
+    bricketStep5: "包装和分销",
+
+    woodPelletStep1: "收集和准备原材料",
+    woodPelletStep2: "研磨和干燥",
+    woodPelletStep3: "压缩成颗粒状",
+    woodPelletStep4: "冷却和筛选",
+    woodPelletStep5: "质量控制和包装",
+
+    woodChipStep1: "选择适合的木材材料",
+    woodChipStep2: "切割至指定尺寸",
+    woodChipStep3: "筛选以确保一致性",
+    woodChipStep4: "干燥至最佳水分含量",
+    woodChipStep5: "质量控制和包装",
+
+    fireWoodStep1: "选择优质硬木品种",
+    fireWoodStep2: "适当的干燥和陈化过程",
+    fireWoodStep3: "切割至标准尺寸",
+    fireWoodStep4: "水分含量质量检查",
+    fireWoodStep5: "包装和分销",
+
+    // About Page
+    companyProfile: "公司简介",
+    trustedPartner: "您值得信赖的供应链合作伙伴",
+    visionMission: "愿景与使命",
+    vision: "愿景",
+    visionDescription: "成为最值得信赖的供应链合作伙伴，高效连接生产者和消费者",
+    mission: "使命",
+    missionDescription: "通过现代技术和优质服务提供最佳物流解决方案",
+    ganiSupplyOperations: "Gani Supply运营",
+    whatWeDo: "我们的业务",
+    ourServices: "我们的服务",
+    servicesDescription: "根据您的需求定制的综合供应链解决方案",
+    supplyChainManagement: "供应链管理",
+    supplyChainDescription: "端到端供应链解决方案，实现最佳效率",
+    warehouseManagement: "仓储管理",
+    warehouseDescription: "先进的仓储解决方案",
+    logisticsDistribution: "物流与配送",
+    logisticsDescription: "高效可靠的配送网络",
+    globalStandards: "全球标准",
+    exportQualityProducts: "出口品质产品",
+    exportQualityDescription: "满足全球市场的国际标准",
+    internationalStandards: "国际标准",
+    internationalStandardsDescription:
+      "我们的产品达到并超越国际质量标准，确保全球市场认可和客户满意度。",
+    qualityControl: "质量控制",
+    qualityControlDescription:
+      "严格的质量控制流程确保每个产品都符合出口标准并保持一致的卓越品质。",
+    globalReach: "全球覆盖",
+    globalReachDescription:
+      "我们的产品受到国际市场的信任，展示了我们对全球质量标准和客户满意度的承诺。",
+    certifiedQuality: "认证品质",
+    certifiedQualityDescription: "满足全球市场的国际标准",
+    ourPrinciples: "我们的原则",
+    companyValues: "公司价值观",
+    companyValuesDescription: "指导我们业务的原则",
+    integrity: "诚信",
+    integrityDescription: "诚实和道德的商业实践",
+    innovation: "创新",
+    innovationDescription: "持续改进和技术进步",
+    excellence: "卓越",
+    excellenceDescription: "对所做的一切都保持质量承诺",
+    sustainabilityDescription: "为更美好的未来负责的商业实践",
+    readyToPartner: "准备好与我们合作了吗？",
+    partnerDescription: "让我们讨论如何优化您的供应链和物流运营",
+    whatsappChatBubble: "我们能帮您什么？💬",
+    chatOnWhatsApp: "在WhatsApp上聊天",
   },
 };
 

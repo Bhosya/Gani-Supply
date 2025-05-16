@@ -24,8 +24,8 @@ const About = () => {
     <div className="min-h-screen bg-gradient-to-b from-white via-gani-cream/40 to-gani-green/5">
       <Navbar />
       <PageHero
-        title="Company Profile"
-        description="Your Trusted Supply Chain Partner"
+        title={t("companyProfile")}
+        description={t("trustedPartner")}
         imageUrl="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop"
       />
 
@@ -37,29 +37,27 @@ const About = () => {
             <div className="animate-fade-in space-y-8">
               <div className="inline-block">
                 <span className="text-gani-green font-semibold tracking-wider uppercase text-sm bg-gani-green/10 px-4 py-2 rounded-full">
-                  About Us
+                  {t("aboutUs")}
                 </span>
                 <h2 className="text-4xl font-playfair mt-4 mb-6 text-gani-dark">
-                  Vision & Mission
+                  {t("visionMission")}
                 </h2>
               </div>
               <div className="space-y-8">
                 <div className="bg-white p-8 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 border border-gani-green/10 hover:border-gani-green/20">
                   <h3 className="text-2xl font-semibold mb-4 text-gani-green">
-                    Vision
+                    {t("vision")}
                   </h3>
                   <p className="text-gani-dark/80 leading-relaxed">
-                    To become the most trusted supply chain partner connecting
-                    producers and consumers efficiently
+                    {t("visionDescription")}
                   </p>
                 </div>
                 <div className="bg-white p-8 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 border border-gani-green/10 hover:border-gani-green/20">
                   <h3 className="text-2xl font-semibold mb-4 text-gani-green">
-                    Mission
+                    {t("mission")}
                   </h3>
                   <p className="text-gani-dark/80 leading-relaxed">
-                    To provide the best logistics solutions through modern
-                    technology and quality service
+                    {t("missionDescription")}
                   </p>
                 </div>
               </div>
@@ -71,8 +69,8 @@ const About = () => {
               <div className="absolute -top-6 -left-6 w-48 h-48 border-2 border-dashed border-gani-green rounded-full opacity-30"></div>
               <div className="absolute -bottom-6 -right-6 w-48 h-48 border-2 border-dashed border-gani-green rounded-full opacity-30"></div>
               <img
-                src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?q=80&w=2072&auto=format&fit=crop"
-                alt="Gani Supply Operations"
+                src="https://th.bing.com/th/id/OIP.RXrBLAdkFnmkaupQQFz7WQHaEK?rs=1&pid=ImgDetMain"
+                alt={t("ganiSupplyOperations")}
                 className="rounded-2xl shadow-2xl w-full aspect-3/2 object-cover"
               />
             </div>
@@ -85,13 +83,13 @@ const About = () => {
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-16">
             <span className="text-gani-green font-semibold tracking-wider uppercase text-sm bg-gani-green/10 px-4 py-2 rounded-full">
-              What We Do
+              {t("whatWeDo")}
             </span>
             <h2 className="text-4xl font-playfair mt-4 mb-6 text-gani-dark">
-              Our Services
+              {t("ourServices")}
             </h2>
             <p className="text-gani-dark/80 max-w-2xl mx-auto text-lg">
-              Comprehensive supply chain solutions tailored to your needs
+              {t("servicesDescription")}
             </p>
           </div>
 
@@ -114,10 +112,10 @@ const About = () => {
                 </svg>
               </div>
               <h3 className="text-2xl font-playfair mb-4 text-gani-dark">
-                Supply Chain Management
+                {t("supplyChainManagement")}
               </h3>
               <p className="text-gani-dark/80 leading-relaxed">
-                End-to-end supply chain solutions for optimal efficiency
+                {t("supplyChainDescription")}
               </p>
             </div>
 
@@ -142,10 +140,10 @@ const About = () => {
                 </svg>
               </div>
               <h3 className="text-2xl font-playfair mb-4 text-gani-dark">
-                Warehouse Management
+                {t("warehouseManagement")}
               </h3>
               <p className="text-gani-dark/80 leading-relaxed">
-                State-of-the-art warehousing solutions
+                {t("warehouseDescription")}
               </p>
             </div>
 
@@ -170,10 +168,10 @@ const About = () => {
                 </svg>
               </div>
               <h3 className="text-2xl font-playfair mb-4 text-gani-dark">
-                Logistics & Distribution
+                {t("logisticsDistribution")}
               </h3>
               <p className="text-gani-dark/80 leading-relaxed">
-                Efficient and reliable distribution network
+                {t("logisticsDescription")}
               </p>
             </div>
           </div>
@@ -186,13 +184,13 @@ const About = () => {
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-16">
             <span className="text-gani-green font-semibold tracking-wider uppercase text-sm bg-gani-green/10 px-4 py-2 rounded-full">
-              Global Standards
+              {t("globalStandards")}
             </span>
             <h2 className="text-4xl font-playfair mt-4 mb-6 text-gani-dark">
-              Export Quality Products
+              {t("exportQualityProducts")}
             </h2>
             <p className="text-gani-dark/80 max-w-2xl mx-auto text-lg">
-              Meeting international standards for global markets
+              {t("exportQualityDescription")}
             </p>
           </div>
 
@@ -218,12 +216,10 @@ const About = () => {
                   </div>
                   <div className="text-center md:text-left">
                     <h3 className="text-2xl font-semibold mb-3 text-gani-dark">
-                      International Standards
+                      {t("internationalStandards")}
                     </h3>
                     <p className="text-gani-dark/80 leading-relaxed">
-                      Our products meet and exceed international quality
-                      standards, ensuring global market acceptance and customer
-                      satisfaction.
+                      {t("internationalStandardsDescription")}
                     </p>
                   </div>
                 </div>
@@ -249,12 +245,10 @@ const About = () => {
                   </div>
                   <div className="text-center md:text-left">
                     <h3 className="text-2xl font-semibold mb-3 text-gani-dark">
-                      Quality Control
+                      {t("qualityControl")}
                     </h3>
                     <p className="text-gani-dark/80 leading-relaxed">
-                      Rigorous quality control processes ensure that every
-                      product meets export standards and maintains consistent
-                      excellence.
+                      {t("qualityControlDescription")}
                     </p>
                   </div>
                 </div>
@@ -280,12 +274,10 @@ const About = () => {
                   </div>
                   <div className="text-center md:text-left">
                     <h3 className="text-2xl font-semibold mb-3 text-gani-dark">
-                      Global Reach
+                      {t("globalReach")}
                     </h3>
                     <p className="text-gani-dark/80 leading-relaxed">
-                      Our products are trusted by international markets,
-                      demonstrating our commitment to global quality standards
-                      and customer satisfaction.
+                      {t("globalReachDescription")}
                     </p>
                   </div>
                 </div>
@@ -297,15 +289,15 @@ const About = () => {
               <div className="absolute -bottom-6 -right-6 w-48 h-48 border-2 border-dashed border-gani-green rounded-full opacity-30"></div>
               <img
                 src="images/truckToContainer.jpg"
-                alt="Export Quality Products"
+                alt={t("exportQualityProducts")}
                 className="rounded-2xl shadow-2xl w-full max-h-[575px] object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-8 rounded-b-2xl">
                 <h3 className="text-white text-2xl font-semibold mb-2">
-                  Certified Quality
+                  {t("certifiedQuality")}
                 </h3>
                 <p className="text-white/90">
-                  Meeting international standards for global markets
+                  {t("certifiedQualityDescription")}
                 </p>
               </div>
             </div>
@@ -319,13 +311,13 @@ const About = () => {
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-16">
             <span className="text-gani-green font-semibold tracking-wider uppercase text-sm bg-gani-green/10 px-4 py-2 rounded-full">
-              Our Principles
+              {t("ourPrinciples")}
             </span>
             <h2 className="text-4xl font-playfair mt-4 mb-6 text-gani-dark">
-              Company Values
+              {t("companyValues")}
             </h2>
             <p className="text-gani-dark/80 max-w-2xl mx-auto text-lg">
-              The principles that guide our business
+              {t("companyValuesDescription")}
             </p>
           </div>
 
@@ -348,10 +340,10 @@ const About = () => {
                 </svg>
               </div>
               <h3 className="text-2xl font-semibold mb-4 text-gani-green">
-                Integrity
+                {t("integrity")}
               </h3>
               <p className="text-gani-dark/80 leading-relaxed">
-                Honest and ethical business practices
+                {t("integrityDescription")}
               </p>
             </div>
 
@@ -373,10 +365,10 @@ const About = () => {
                 </svg>
               </div>
               <h3 className="text-2xl font-semibold mb-4 text-gani-green">
-                Innovation
+                {t("innovation")}
               </h3>
               <p className="text-gani-dark/80 leading-relaxed">
-                Continuous improvement and technological advancement
+                {t("innovationDescription")}
               </p>
             </div>
 
@@ -398,10 +390,10 @@ const About = () => {
                 </svg>
               </div>
               <h3 className="text-2xl font-semibold mb-4 text-gani-green">
-                Excellence
+                {t("excellence")}
               </h3>
               <p className="text-gani-dark/80 leading-relaxed">
-                Commitment to quality in everything we do
+                {t("excellenceDescription")}
               </p>
             </div>
 
@@ -423,10 +415,10 @@ const About = () => {
                 </svg>
               </div>
               <h3 className="text-2xl font-semibold mb-4 text-gani-green">
-                Sustainability
+                {t("sustainability")}
               </h3>
               <p className="text-gani-dark/80 leading-relaxed">
-                Responsible business practices for a better future
+                {t("sustainabilityDescription")}
               </p>
             </div>
           </div>
@@ -437,17 +429,16 @@ const About = () => {
       <section className="py-20 md:px-10 bg-gradient-to-br from-gani-green/20 via-gani-green/10 to-gani-cream/30">
         <div className="container mx-auto text-center max-w-4xl">
           <h2 className="text-4xl font-playfair mb-6 text-gani-dark">
-            Ready to Partner With Us?
+            {t("readyToPartner")}
           </h2>
           <p className="text-gani-dark/80 mb-8 text-lg">
-            Let's discuss how we can optimize your supply chain and logistics
-            operations
+            {t("partnerDescription")}
           </p>
           <Button
             onClick={handleContactClick}
             className="bg-gani-green hover:bg-gani-green-dark text-white px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
           >
-            Contact Us
+            {t("contactUs")}
           </Button>
         </div>
       </section>

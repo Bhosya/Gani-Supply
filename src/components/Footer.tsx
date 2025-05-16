@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className="bg-gani-dark text-white pt-16 pb-8 md:px-10">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-12">
           {/* Brand column */}
           <div>
             <h3 className="font-playfair text-2xl mb-4">Gani Supply</h3>
@@ -42,53 +42,6 @@ const Footer = () => {
                 <Mail className="h-5 w-5" />
               </a>
             </div>
-          </div>
-
-          {/* Quick links */}
-          <div>
-            <h4 className="font-medium mb-4 text-white/90">{t("shop")}</h4>
-            <ul className="space-y-3">
-              <li>
-                <Link
-                  to="/products"
-                  className="text-white/70 hover:text-white transition-colors"
-                >
-                  {t("allProducts")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/products/home-decor"
-                  className="text-white/70 hover:text-white transition-colors"
-                >
-                  {t("homeDecor")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/products/furniture"
-                  className="text-white/70 hover:text-white transition-colors"
-                >
-                  {t("furniture")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/products/textiles"
-                  className="text-white/70 hover:text-white transition-colors"
-                >
-                  {t("textiles")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/products/kitchenware"
-                  className="text-white/70 hover:text-white transition-colors"
-                >
-                  {t("kitchen")}
-                </Link>
-              </li>
-            </ul>
           </div>
 
           {/* Information */}

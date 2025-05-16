@@ -20,72 +20,86 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      name: "Hardwood Charcoal",
+      nameKey: "hardwoodCharcoal",
       image: "images/hardwoordCharcoal.jpeg",
       description:
         "Premium hardwood charcoal made from sustainably sourced timber. Our hardwood charcoal is known for its long burning time, high heat output, and minimal smoke production. Perfect for both commercial and residential use.",
       process: [
-        "Selection of premium hardwood timber",
-        "Drying process to reduce moisture content",
-        "Carbonization in controlled temperature kilns",
-        "Quality control and grading",
-        "Packaging and distribution",
+        "hardwoodCharcoalStep1",
+        "hardwoodCharcoalStep2",
+        "hardwoodCharcoalStep3",
+        "hardwoodCharcoalStep4",
+        "hardwoodCharcoalStep5",
       ],
     },
     {
       id: 2,
-      name: "Sawdust",
-      image: "images/sawdust.jpg",
+      nameKey: "sawdust",
+      image: "images/charkol.jpg",
       description:
         "High-quality sawdust produced from our wood processing operations. This byproduct is carefully collected and processed to ensure consistency and cleanliness. Ideal for various industrial applications.",
       process: [
-        "Collection from wood processing operations",
-        "Screening and filtering for consistency",
-        "Drying to optimal moisture content",
-        "Quality testing and grading",
-        "Packaging in various sizes",
+        "sawdustStep1",
+        "sawdustStep2",
+        "sawdustStep3",
+        "sawdustStep4",
+        "sawdustStep5",
       ],
     },
     {
       id: 3,
-      name: "Bricket",
+      nameKey: "bricket",
       image: "images/charcoal.jpg",
       description:
         "Compressed charcoal briquettes made from a blend of premium charcoal and natural binders. Our briquettes offer consistent heat output and are perfect for grilling and industrial applications.",
       process: [
-        "Mixing of charcoal powder with natural binders",
-        "Compression into uniform shapes",
-        "Drying process",
-        "Quality control testing",
-        "Packaging and distribution",
+        "bricketStep1",
+        "bricketStep2",
+        "bricketStep3",
+        "bricketStep4",
+        "bricketStep5",
       ],
     },
     {
       id: 4,
-      name: "Wood Pellet",
+      nameKey: "woodPellet",
       image: "images/woodPellet.webp",
       description:
         "Premium wood pellets made from compressed sawdust and wood waste. Our pellets are designed for high efficiency and low emissions, making them ideal for heating systems and industrial use.",
       process: [
-        "Collection and preparation of raw materials",
-        "Grinding and drying",
-        "Compression into pellet form",
-        "Cooling and screening",
-        "Quality control and packaging",
+        "woodPelletStep1",
+        "woodPelletStep2",
+        "woodPelletStep3",
+        "woodPelletStep4",
+        "woodPelletStep5",
       ],
     },
     {
       id: 5,
-      name: "Wood Chip",
+      nameKey: "woodChip",
       image: "images/woodChip.webp",
       description:
         "High-quality wood chips produced from various wood species. Our wood chips are processed to ensure consistent size and quality, suitable for multiple industrial applications.",
       process: [
-        "Selection of suitable wood materials",
-        "Chipping to specified sizes",
-        "Screening for consistency",
-        "Drying to optimal moisture content",
-        "Quality control and packaging",
+        "woodChipStep1",
+        "woodChipStep2",
+        "woodChipStep3",
+        "woodChipStep4",
+        "woodChipStep5",
+      ],
+    },
+    {
+      id: 6,
+      nameKey: "fireWood",
+      image: "images/firewood.jpg",
+      description:
+        "Premium firewood sourced from sustainable forests. Our firewood is carefully selected, properly seasoned, and cut to optimal sizes for efficient burning. Perfect for fireplaces, outdoor fire pits, and industrial heating applications.",
+      process: [
+        "fireWoodStep1",
+        "fireWoodStep2",
+        "fireWoodStep3",
+        "fireWoodStep4",
+        "fireWoodStep5",
       ],
     },
   ];
@@ -111,13 +125,13 @@ const Products = () => {
                 <div className="relative h-80 overflow-hidden">
                   <img
                     src={product.image}
-                    alt={product.name}
+                    alt={t(product.nameKey)}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div className="p-4">
-                  <h3 className="font-playfair text-lg mt-1 mb-1">
-                    {product.name}
+                <div className="p-3">
+                  <h3 className="font-playfair text-lg mb-2">
+                    {t(product.nameKey)}
                   </h3>
                   <Button
                     className="w-full bg-gani-green hover:bg-gani-green-dark text-white"
@@ -128,14 +142,6 @@ const Products = () => {
                 </div>
               </div>
             ))}
-            {/* CTA Block */}
-            <div className="flex items-center justify-center aspect-square bg-gani-green text-white text-center transition-colors duration-300">
-              <div className="px-4">
-                <h3 className="text-5xl md:text-7xl font-bold mb-1">
-                  {t("buyNow")}
-                </h3>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -145,7 +151,14 @@ const Products = () => {
         <ProductModal
           isOpen={!!selectedProduct}
           onClose={() => setSelectedProduct(null)}
-          product={products.find((p) => p.id === selectedProduct)!}
+          product={{
+            id: products.find((p) => p.id === selectedProduct)!.id,
+            nameKey: products.find((p) => p.id === selectedProduct)!.nameKey,
+            descKey: products.find((p) => p.id === selectedProduct)!
+              .description,
+            image: products.find((p) => p.id === selectedProduct)!.image,
+            process: products.find((p) => p.id === selectedProduct)!.process,
+          }}
         />
       )}
 
