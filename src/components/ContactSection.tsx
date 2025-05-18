@@ -93,7 +93,7 @@ const ContactSection = () => {
       {/* Hidden form for FormSubmit.co */}
       <form
         ref={hiddenFormRef}
-        action="https://formsubmit.co/hello@ganisupply.com"
+        action="https://formsubmit.co/ganisupply42443@gmail.com"
         method="POST"
         className="hidden"
       >
