@@ -6,10 +6,17 @@ import Newsletter from "@/components/Newsletter";
 import PageHero from "@/components/PageHero";
 import { useLanguage } from "@/contexts/LanguageContext";
 import ProductModal from "@/components/ProductModal";
+import SEO from "../components/SEO";
+import { useSEO } from "../hooks/useSEO";
 
 const Products = () => {
   const { t } = useLanguage();
   const [selectedProduct, setSelectedProduct] = useState<number | null>(null);
+
+  const seo = useSEO({
+    page: "products",
+    customImage: "https://www.ganisupply.com/images/products-og.jpg",
+  });
 
   useEffect(() => {
     // Scroll to top when the component mounts
@@ -113,66 +120,69 @@ const Products = () => {
   ];
 
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <PageHero
-        title={t("curatedCollection")}
-        description={t("collectionDescription")}
-        imageUrl="https://mieco.com.my/wp-content/uploads/2023/10/RUBBER-WOOD-3-scaled.jpg"
-      />
-
-      <section className="py-16 md:px-10 bg-gani-cream">
-        <div className="container mx-auto">
-          {/* Products Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {products.map((product) => (
-              <div
-                key={product.id}
-                className="group relative overflow-hidden bg-white shadow-sm hover:shadow-md transition-all duration-300 animate-fade-in"
-              >
-                <div className="relative h-80 overflow-hidden">
-                  <img
-                    src={product.image}
-                    alt={t(product.nameKey)}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="p-3">
-                  <h3 className="font-playfair text-lg mb-2">
-                    {t(product.nameKey)}
-                  </h3>
-                  <Button
-                    className="w-full bg-gani-green hover:bg-gani-green-dark text-white"
-                    onClick={() => setSelectedProduct(product.id)}
-                  >
-                    {t("viewDetails")}
-                  </Button>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Product Modal */}
-      {selectedProduct && (
-        <ProductModal
-          isOpen={!!selectedProduct}
-          onClose={() => setSelectedProduct(null)}
-          product={{
-            id: products.find((p) => p.id === selectedProduct)!.id,
-            nameKey: products.find((p) => p.id === selectedProduct)!.nameKey,
-            descKey: products.find((p) => p.id === selectedProduct)!
-              .description,
-            image: products.find((p) => p.id === selectedProduct)!.image,
-            process: products.find((p) => p.id === selectedProduct)!.process,
-          }}
+    <>
+      <SEO {...seo} />
+      <div className="min-h-screen">
+        <Navbar />
+        <PageHero
+          title={t("curatedCollection")}
+          description={t("collectionDescription")}
+          imageUrl="https://mieco.com.my/wp-content/uploads/2023/10/RUBBER-WOOD-3-scaled.jpg"
         />
-      )}
 
-      <Newsletter />
-      <Footer />
-    </div>
+        <section className="py-16 md:px-10 bg-gani-cream">
+          <div className="container mx-auto">
+            {/* Products Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {products.map((product) => (
+                <div
+                  key={product.id}
+                  className="group relative overflow-hidden bg-white shadow-sm hover:shadow-md transition-all duration-300 animate-fade-in"
+                >
+                  <div className="relative h-80 overflow-hidden">
+                    <img
+                      src={product.image}
+                      alt={t(product.nameKey)}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="p-3">
+                    <h3 className="font-playfair text-lg mb-2">
+                      {t(product.nameKey)}
+                    </h3>
+                    <Button
+                      className="w-full bg-gani-green hover:bg-gani-green-dark text-white"
+                      onClick={() => setSelectedProduct(product.id)}
+                    >
+                      {t("viewDetails")}
+                    </Button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Product Modal */}
+        {selectedProduct && (
+          <ProductModal
+            isOpen={!!selectedProduct}
+            onClose={() => setSelectedProduct(null)}
+            product={{
+              id: products.find((p) => p.id === selectedProduct)!.id,
+              nameKey: products.find((p) => p.id === selectedProduct)!.nameKey,
+              descKey: products.find((p) => p.id === selectedProduct)!
+                .description,
+              image: products.find((p) => p.id === selectedProduct)!.image,
+              process: products.find((p) => p.id === selectedProduct)!.process,
+            }}
+          />
+        )}
+
+        <Newsletter />
+        <Footer />
+      </div>
+    </>
   );
 };
 
